@@ -4,24 +4,24 @@ Last checked/updated: 2026-06-21
 
 ## Executive summary
 
-The active design is now R6: a Teensy 4.1 dual-CAN + LIN/K automotive interface using OBD2 pigtail/cable solder pads and DIP-switch configurable routing.
+The active design is now R7: a Teensy 4.1 dual-CAN + LIN/K automotive interface using OBD2 pigtail/cable solder pads and DIP-switch configurable routing.
 
-R6 supersedes R5.
+R7 supersedes R6.
 
-Reason: R5 was DRC-clean and manufacturable as a PCB, but the procurement audit found it lacked the required external LM2596 buck-regulator support parts. R6 adds those parts and updates the transceiver selections for Teensy 4.1 3.3 V logic compatibility.
+Reason: R6 added the missing LM2596 buck-regulator support components and 3.3 V-compatible transceiver choices, but visual review found that the generated Teensy 4.1 footprint had only 22 pads on the upper long row. The intended Teensy 4.1 side-row pattern for this design is asymmetric but should be 23 upper-row pads and 24 lower-row pads. R7 corrects this.
 
 Authoritative routed board:
 
-- `teensy-41-can-lin-r6-complete-power-routed.kicad_pcb`
+- `teensy-41-can-lin-r7-teensy-footprint-corrected-routed.kicad_pcb`
 
 Preferred fabrication ZIP:
 
-- `r6_complete_power_fabrication_minimal_gerbers.zip`
+- `r7_teensy_footprint_corrected_fabrication_minimal_gerbers.zip`
 
-Main R6 documentation:
+Main R7 documentation:
 
-- `R6_PROCUREMENT_BOM_EU.md`
-- `BOM_R6_PROCUREMENT_EU.csv`
+- `R7_PROCUREMENT_BOM_EU.md`
+- `BOM_R7_PROCUREMENT_EU.csv`
 
 ## KiCad verification
 
@@ -33,28 +33,29 @@ Verified with:
 
 Latest authoritative DRC report:
 
-- `reports/teensy-41-can-lin-r6-complete-power-routed-drc.rpt`
+- `reports/teensy-41-can-lin-r7-teensy-footprint-corrected-routed-drc.rpt`
 
 Result:
 
 - DRC violations: 0
 - Unconnected pads: 0
 - Footprint errors: 0
+- Teensy U1 pad rows: 23 upper / 24 lower, 47 total side-row pads
 
 Generated fabrication files:
 
-- `gerbers/r6_complete_power_fabrication_minimal/`
-- `r6_complete_power_fabrication_minimal_gerbers.zip`
+- `gerbers/r7_teensy_footprint_corrected_fabrication_minimal/`
+- `r7_teensy_footprint_corrected_fabrication_minimal_gerbers.zip`
 
 Generated preview files:
 
-- `previews/r6_complete_power_svg/`
+- `previews/r7_teensy_footprint_corrected_svg/`
 
-## R6 feature summary
+## R7 feature summary
 
 ### Mechanical form
 
-R6 uses an OBD2 cable/pigtail instead of a board-mounted OBD connector.
+R7 uses an OBD2 cable/pigtail instead of a board-mounted OBD connector.
 
 The user should:
 
@@ -74,6 +75,11 @@ Key assignments:
 - LIN enable/control: pin 6
 - Teensy +3.3 V is used for CAN VIO and LIN RX pull-up logic compatibility
 
+R7 Teensy side-row footprint pattern:
+
+- Upper row: GND, VIN, 23..13, GND, 41..33 = 23 pads
+- Lower row: GND, 0..12, 3.3V, 24..32 = 24 pads
+
 ### Communication ICs
 
 - CAN A/B: MCP2562FD-E/SN, SOIC-8, VIO pin connected to +3.3 V.
@@ -81,7 +87,7 @@ Key assignments:
 
 ### Power section
 
-R6 includes the complete LM2596S-5.0 fixed 5 V buck-regulator support circuit:
+R7 includes the complete LM2596S-5.0 fixed 5 V buck-regulator support circuit:
 
 - F1: 500 mA resettable fuse
 - D1: SMBJ24CA input TVS
@@ -120,7 +126,7 @@ PCB fabrication status: ready to upload as a first-run fabrication candidate.
 
 Use:
 
-- `r6_complete_power_fabrication_minimal_gerbers.zip`
+- `r7_teensy_footprint_corrected_fabrication_minimal_gerbers.zip`
 
 Recommended order settings:
 
@@ -140,15 +146,21 @@ Remaining practical checks before vehicle use:
 
 ## Previous revisions
 
+R6:
+
+- `teensy-41-can-lin-r6-complete-power-routed.kicad_pcb`
+- Added complete LM2596 support parts and 3.3 V-compatible CAN/LIN IC selections.
+- Superseded by R7 because U1 Teensy footprint upper side-row was one pad short.
+
 R5:
 
 - `teensy-41-can-lin-r5-pigtail-dipswitch-routed.kicad_pcb`
 - Introduced the safer OBD2 pigtail/DIP-switch mechanical concept.
-- Superseded by R6 because it lacked required LM2596 support components and procurement-ready IC choices.
+- Superseded by R6/R7 because it lacked required LM2596 support components and procurement-ready IC choices.
 
 R4:
 
 - `teensy-41-can-lin-r4-universal-routing-matrix.kicad_pcb`
 - Implemented CAN/LIN routing matrix, but still used a board-mounted OBD connector approach.
 
-R6 supersedes R4/R5 for ordering and procurement.
+R7 supersedes R4/R5/R6 for ordering and procurement.
