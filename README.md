@@ -2,7 +2,7 @@
 
 This project contains a Teensy 4.1 based dual-CAN + LIN/K automotive interface for diagnostic/reverse-engineering use.  
 The aim is to be used with Savvy.  
-Firmware yet ot be written.  
+Firmware yet to be written.  
 
 ## Current active revision
 
