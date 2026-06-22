@@ -1,34 +1,45 @@
 # Teensy 4.1 Dual CAN-FD + LIN/K shield
 
-This repository contains a Teensy 4.1 based automotive diagnostics and reverse-engineering shield with dual CAN-FD transceivers and a LIN/K-line interface.
+This repository contains the public hardware release for a Teensy 4.1 based automotive diagnostics and reverse-engineering shield with dual CAN-FD transceivers and a LIN/K-line interface.
 
 ## Current active revision
 
 Use **R9 FAB_READY** for the first real-world prototype PCB order.
 
-Authoritative R9 PCB source:
+The repository is intentionally kept clean: only the latest public R9 hardware source, fabrication outputs, reports, and user-facing documentation are tracked. Intermediate R5/R6/R7 variants and private generation scripts were removed from the public tree.
 
-- `teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pcb`
-- `teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pro`
+## Repository layout
 
-Project-local footprint support:
+- `hardware/kicad/` — authoritative R9 KiCad PCB project and local footprint library.
+- `fabrication/r9/gerbers/` — R9 Gerber/drill manufacturing outputs.
+- `fabrication/r9/reports/` — R9 KiCad CLI verification reports.
+- `fabrication/r9/package/` — clean FAB_READY release ZIP and SHA256 checksum.
+- `docs/` — user-facing hardware documentation.
+- `CHANGELOG.md` — revision notes.
+- `CURRENT_STATUS.md` — current manufacturing/prototype status.
 
-- `fp-lib-table`
-- `teensy-41-can-lin.pretty/`
+## Authoritative R9 PCB source
 
-Fabrication package:
+- `hardware/kicad/teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pcb`
+- `hardware/kicad/teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pro`
+- `hardware/kicad/fp-lib-table`
+- `hardware/kicad/teensy-41-can-lin.pretty/`
 
-- `FAB_READY_R9_teensy-41-dual-canfd-lin_CLEAN_SHARE_20260622T122624Z.zip`
-- SHA256 is recorded in `FAB_READY_R9_CLEAN_SHARE_SHA256.txt`
+Open the `.kicad_pro` file from inside `hardware/kicad/` so KiCad resolves the project-local footprint table correctly.
+
+## Fabrication package
+
+- `fabrication/r9/package/FAB_READY_R9_teensy-41-dual-canfd-lin_CLEAN_SHARE_20260622T122624Z.zip`
+- `fabrication/r9/package/FAB_READY_R9_CLEAN_SHARE_SHA256.txt`
 
 Gerber/drill directory:
 
-- `gerbers/r9_fab_ready/`
+- `fabrication/r9/gerbers/`
 
 Verification reports:
 
-- `reports/r9_fab_ready/drc.rpt`
-- `reports/r9_fab_ready/summary.txt`
+- `fabrication/r9/reports/drc.rpt`
+- `fabrication/r9/reports/summary.txt`
 
 ## R9 verification summary
 
@@ -88,8 +99,12 @@ Before connecting to a vehicle:
 6. Enable exactly one LIN/K source switch at a time.
 7. Do not transmit vehicle frames until bench and passive capture tests pass.
 
-## Software
+## Scripts and automation
+
+No generation, packaging, verification, or publishing scripts are tracked in this public repository. Those remain private.
+
+## Firmware
 
 Firmware work can proceed before the PCB arrives, but keep defaults passive/read-only until the assembled hardware is bench-tested.
 
-The legacy schematic in this repository is not treated as authoritative for R9. R9 manufacturing confidence is based on the KiCad PCB source, project-local footprints, KiCad CLI DRC, and KiCad-generated Gerber/drill files.
+The legacy schematic is not treated as authoritative for R9. R9 manufacturing confidence is based on the KiCad PCB source, project-local footprints, KiCad CLI DRC, and KiCad-generated Gerber/drill files.

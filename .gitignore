@@ -1,33 +1,38 @@
-# KiCad project/design files are source artifacts in this repository.
-# Keep transient backup files out, but track .kicad_pcb/.kicad_sch/.kicad_pro/.kicad_prl.
+# KiCad source artifacts are intentionally tracked.
+# Ignore transient KiCad/editor files.
+*.kicad_prl
 *.kicad_prl-bak
 *.kicad_pcb-bak
 *.kicad_sch-bak
+~*.lck
+*.lck
+*~
+*.swp
+*.swo
+.DS_Store
 
-# Build directories
+# Local/private automation and scratch files are not public repository artifacts.
+scripts/
+tools/
+private/
+.history/
+archive/
+packages/
 build/
 dist/
 .output/
-
-# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# VS Code
-.vscode/
-
-# Other files
-.DS_Store
-*.swp
-*.swo
-*~
-# KiCad/editor lock files
-~*.lck
-*.lck
-
-# Local work/cache folders
-.history/
-packages/
-archive/backups/
+# Keep generated/private script source out of this public hardware repo.
+*.py
+*.sh
+*.bash
+*.zsh
+*.ps1
+*.bat
+*.cmd
+*.js
+*.ts

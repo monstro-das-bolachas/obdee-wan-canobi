@@ -1,5 +1,22 @@
 # Changelog
 
+## Repository cleanup - 2026-06-22
+
+### Changed
+
+- Reorganized the public repository around the current R9 FAB_READY release.
+- Moved authoritative KiCad source and local footprints to `hardware/kicad/`.
+- Moved R9 Gerbers, reports, and release package to `fabrication/r9/`.
+- Moved public user-facing hardware docs to `docs/`.
+
+### Removed from current branch
+
+- Removed intermediate R5/R6/R7 KiCad variants, Gerbers, preview SVGs, BOMs, and reports from the public tree.
+- Removed all tracked generation scripts from the public repository.
+- Removed firmware/code example file from the public repository to keep code/scripts private.
+
+Historical files may still exist in Git history and in older release tags; the current branch is the clean public R9 layout.
+
 ## R9 FAB_READY - 2026-06-22
 
 ### Status
@@ -8,22 +25,11 @@ R9 is the current manufacturing prototype candidate for the Teensy 4.1 dual CAN-
 
 ### Added
 
-- Added explicit R9 final-candidate KiCad PCB/project files:
-  - `teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pcb`
-  - `teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pro`
-- Added clean FAB_READY manufacturing ZIP:
-  - `FAB_READY_R9_teensy-41-dual-canfd-lin_CLEAN_SHARE_20260622T122624Z.zip`
-- Added R9 Gerber/drill outputs under `gerbers/r9_fab_ready/`.
-- Added R9 verification reports under `reports/r9_fab_ready/`.
-- Added `R9_FAB_READY_STATUS.md` and `R9_README_STATUS.txt` manufacturing notes.
-- Added project-local footprint library support with `fp-lib-table` and `teensy-41-can-lin.pretty/`.
-
-### Changed
-
-- Promoted the hardware status from R7 to R9 FAB_READY.
-- Updated `README.md` and `CURRENT_STATUS.md` to point to R9 as the active manufacturing revision.
-- Clarified that R9 uses OBD2 pigtail/cable solder pads instead of an uncertain board-mounted J1962 connector.
-- Clarified prototype safety requirements before vehicle use.
+- Added explicit R9 final-candidate KiCad PCB/project files.
+- Added clean FAB_READY manufacturing ZIP.
+- Added R9 Gerber/drill outputs.
+- Added R9 verification reports.
+- Added project-local footprint library support.
 
 ### Verification
 
@@ -39,18 +45,6 @@ R9 was verified from the cleaned project copy with KiCad CLI 10.0.3.
 - The legacy schematic is not authoritative for R9. Manufacturing confidence is based on the KiCad PCB source, project-local footprints, KiCad CLI DRC, and KiCad-generated Gerber/drill files.
 - R9 remains first-run prototype hardware: order a small batch, bench-test power rails first, start with passive/read-only firmware, and verify the OBD2 pigtail pinout with a multimeter.
 
-## R7 - 2026-06-21
+## Earlier intermediate revisions
 
-- Corrected Teensy 4.1 side-row footprint to 23 upper / 24 lower pads.
-- Preserved R6 electrical fixes and LM2596S-5.0 buck-regulator support.
-- Verified PCB DRC clean before R9 promotion.
-
-## R6 - 2026-06-21
-
-- Added complete 5 V buck regulator support section.
-- Selected 3.3 V-compatible CAN/LIN transceivers.
-
-## R5 - 2026-06-21
-
-- Introduced OBD2 pigtail solder-pad mechanical approach.
-- Added DIP-switch CAN/LIN routing selectors.
+R5, R6, and R7 were development/intermediate variants leading to R9. They are no longer tracked in the current public branch layout.

@@ -6,27 +6,33 @@ Last checked/updated: 2026-06-22
 
 The active hardware revision is **R9 FAB_READY**: a Teensy 4.1 dual-CAN-FD + LIN/K automotive interface using OBD2 pigtail/cable solder pads and DIP-switch configurable routing.
 
-R9 supersedes R7 for manufacturing/prototype ordering.
+R9 supersedes earlier intermediate variants for manufacturing/prototype ordering. The public repository has been cleaned so only R9 public source, fabrication outputs, reports, and user-facing docs are tracked.
 
 ## Authoritative R9 files
 
 PCB source:
 
-- `teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pcb`
-- `teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pro`
+- `hardware/kicad/teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pcb`
+- `hardware/kicad/teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pro`
+
+Project-local footprint support:
+
+- `hardware/kicad/fp-lib-table`
+- `hardware/kicad/teensy-41-can-lin.pretty/`
 
 Fabrication package:
 
-- `FAB_READY_R9_teensy-41-dual-canfd-lin_CLEAN_SHARE_20260622T122624Z.zip`
+- `fabrication/r9/package/FAB_READY_R9_teensy-41-dual-canfd-lin_CLEAN_SHARE_20260622T122624Z.zip`
+- `fabrication/r9/package/FAB_READY_R9_CLEAN_SHARE_SHA256.txt`
 
 Gerbers/drill:
 
-- `gerbers/r9_fab_ready/`
+- `fabrication/r9/gerbers/`
 
 Reports:
 
-- `reports/r9_fab_ready/drc.rpt`
-- `reports/r9_fab_ready/summary.txt`
+- `fabrication/r9/reports/drc.rpt`
+- `fabrication/r9/reports/summary.txt`
 
 ## KiCad verification
 
