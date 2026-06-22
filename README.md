@@ -1,66 +1,60 @@
-# Teensy 4.1 CAN/LIN Interface for automotive diagnostics
+# Teensy 4.1 Dual CAN-FD + LIN/K shield
 
-This project contains a Teensy 4.1 based dual-CAN + LIN/K automotive interface for diagnostic/reverse-engineering use.  
-The aim is to be used with Savvy.  
-Firmware yet to be written.  
+This repository contains a Teensy 4.1 based automotive diagnostics and reverse-engineering shield with dual CAN-FD transceivers and a LIN/K-line interface.
 
 ## Current active revision
 
-Use R7.
+Use **R9 FAB_READY** for the first real-world prototype PCB order.
 
-R7 supersedes R6. R6 added the missing LM2596 buck-regulator support parts and 3.3 V-compatible CAN/LIN transceiver selections, but visual review found that its generated Teensy 4.1 footprint was one pad short on the upper long row. R7 corrects the Teensy footprint while keeping the R6 electrical fixes.
+Authoritative R9 PCB source:
 
-R5 was the first revision publicly shared; R7 is the recommended ordering/procurement candidate.
+- `teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pcb`
+- `teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pro`
 
-Start here:
+Project-local footprint support:
 
-- `CURRENT_STATUS.md` — current truth/status
-- `R7_PROCUREMENT_BOM_EU.md` — R7 procurement and ordering notes
-- `BOM_R7_PROCUREMENT_EU.csv` — EU-capable procurement BOM with exact manufacturer part numbers
-- `R5_PIGTAIL_DIPSWITCH_MANUFACTURING.md` — historical R5 pigtail/DIP-switch notes, superseded by R7
+- `fp-lib-table`
+- `teensy-41-can-lin.pretty/`
 
-Authoritative R7 PCB:
+Fabrication package:
 
-- `teensy-41-can-lin-r7-teensy-footprint-corrected-routed.kicad_pcb`
-
-Preferred fabrication package:
-
-- `r7_teensy_footprint_corrected_fabrication_minimal_gerbers.zip`
-
-DRC report:
-
-- `reports/teensy-41-can-lin-r7-teensy-footprint-corrected-routed-drc.rpt`
-
-Preview SVGs:
-
-- `previews/r7_teensy_footprint_corrected_svg/`
+- `FAB_READY_R9_teensy-41-dual-canfd-lin_CLEAN_SHARE_20260622T122624Z.zip`
+- SHA256 is recorded in `FAB_READY_R9_CLEAN_SHARE_SHA256.txt`
 
 Gerber/drill directory:
 
-- `gerbers/r7_teensy_footprint_corrected_fabrication_minimal/`
+- `gerbers/r9_fab_ready/`
 
-## Verification summary
+Verification reports:
 
-R7 was generated with KiCad/pcbnew automation, routed with local FreeRouting, and verified with KiCad CLI.
+- `reports/r9_fab_ready/drc.rpt`
+- `reports/r9_fab_ready/summary.txt`
+
+## R9 verification summary
+
+Verified with KiCad CLI 10.0.3 from the cleaned project copy.
 
 Result:
 
-- KiCad CLI: 10.0.3
 - DRC violations: 0
-- Unconnected pads: 0
+- Unconnected pads/items: 0
 - Footprint errors: 0
 - Gerber/drill export: passed
-- Teensy U1 long-row pad counts: 23 upper / 24 lower, matching the intended PJRC Teensy 4.1 side-row asymmetry
+- Local footprint-library warnings mitigated by including `fp-lib-table` and `teensy-41-can-lin.pretty/`
 
-## R7 key electrical/mechanical decisions
+## Hardware overview
 
-- U1 Teensy footprint: corrected upper row to GND, VIN, 23..13, GND, 41..33; lower row remains GND, 0..12, 3.3V, 24..32.
-- U2/U3 CAN transceivers: Microchip MCP2562FD-E/SN, using VIO on pin 5 tied to Teensy +3.3 V.
-- U4 LIN transceiver: TI TLIN1029DRQ1, with open-drain RXD pulled up to +3.3 V by R1.
-- U5 5 V regulator: LM2596S-5.0 with required external inductor, Schottky diode, bulk capacitors, and ceramic decoupling.
-- J1 uses OBD2 pigtail/cable solder pads instead of a risky board-mounted OBD connector footprint.
+R9 implements:
 
-## Configuration summary
+- Teensy 4.1 shield-style board.
+- Dual CAN-FD channels using MCP2562FD-E/SN transceivers with VIO tied to +3.3 V.
+- LIN/K-line interface using TLIN1029DRQ1, with RXD pulled up to +3.3 V.
+- OBD2 pigtail/cable solder pads instead of an uncertain board-mounted J1962 connector.
+- DIP-switch CAN normal/cross routing and LIN/K source selection.
+- Complete LM2596S-5.0 fixed 5 V buck regulator support section.
+- Corrected Teensy 4.1 side-row footprint: 23 upper / 24 lower side-row pads.
+
+## DIP switch summary
 
 SW1 selects CAN routing:
 
@@ -82,19 +76,20 @@ SW2 selects LIN/K source:
 
 Rule: enable exactly one LIN/K source at a time.
 
-## Safety
+## Prototype safety
 
 Before connecting to a vehicle:
 
-1. Verify OBD cable pinout with a multimeter.
-2. Assemble and bench-test the power section first.
-3. Verify +5 V rail before installing the Teensy.
-4. Confirm DIP switch settings.
-5. Start with passive/read-only firmware.
-6. Do not enable termination or transmit frames unless intentionally testing.
+1. Verify every OBD2 pigtail wire-to-pin mapping with a multimeter.
+2. Assemble and bench-test the power section first with current limiting.
+3. Verify +5 V output before installing the Teensy.
+4. Verify +3.3 V VIO/pull-up compatibility at CAN/LIN IC pins.
+5. Start with passive/read-only CAN firmware.
+6. Enable exactly one LIN/K source switch at a time.
+7. Do not transmit vehicle frames until bench and passive capture tests pass.
 
-## Prototype warning / disclaimer
+## Software
 
-R7 is the current manufacturing/procurement candidate, but it is still first-run hardware. Order a small PCB batch first, bench-test carefully, and do not connect to a car until all power and wiring checks pass.
+Firmware work can proceed before the PCB arrives, but keep defaults passive/read-only until the assembled hardware is bench-tested.
 
-The project was AI-assisted and should be treated as a prototype. Independent review and constructive feedback are welcome.
+The legacy schematic in this repository is not treated as authoritative for R9. R9 manufacturing confidence is based on the KiCad PCB source, project-local footprints, KiCad CLI DRC, and KiCad-generated Gerber/drill files.
