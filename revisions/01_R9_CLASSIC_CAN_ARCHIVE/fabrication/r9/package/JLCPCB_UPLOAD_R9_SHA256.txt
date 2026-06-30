@@ -1,0 +1,1 @@
+48bb759698e0248d32a82fbea188f86bcc9c9b2e903e5315862a93c9dfe105cf  fabrication/r9/package/JLCPCB_UPLOAD_R9_teensy-41-dual-canfd-lin_GERBERS_ONLY_20260629.zip

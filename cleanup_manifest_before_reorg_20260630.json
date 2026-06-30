@@ -1,0 +1,952 @@
+[
+  {
+    "path": ".gitignore",
+    "size": 504,
+    "sha256": "321997c96b1c69456c22a866f00dca3f5a91567f8f22d368bef33e87456aa517"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "size": 2708,
+    "sha256": "67e44878cd1c93a0b0e1355dad9b23ae2da0fd746096c77193ee1db53a881390"
+  },
+  {
+    "path": "CURRENT_STATUS.md",
+    "size": 3242,
+    "sha256": "b601c8cc6a62a7ad129d5d73f2ac4fed2619d93a3c02eda05a3c3f5e4596b97c"
+  },
+  {
+    "path": "LICENSE",
+    "size": 1067,
+    "sha256": "4affaf1ee457cb9ef1863e2ce6998ddd3efa01d4bb0269a04484437d51117d3a"
+  },
+  {
+    "path": "README.md",
+    "size": 4926,
+    "sha256": "cebdee08fe9ddc44302edbb29c7fb8a9f764fa07dbe2b65955197df31f465807"
+  },
+  {
+    "path": "docs/JLCPCB_EVALUATION_FIXES_20260629.md",
+    "size": 4130,
+    "sha256": "d0d1bb8e11d3f95dbff6abd994f4d7d27763f77055be8de418577b77cf130460"
+  },
+  {
+    "path": "docs/JLCPCB_LATEST_SCREENSHOTS_REVIEW_20260629.md",
+    "size": 3391,
+    "sha256": "06d4cc7a4183d4a49224c214bdd09aa2556840ae76c7a3b7faf0cc9d76ecbae0"
+  },
+  {
+    "path": "docs/JLCPCB_SUBMISSION_NOTES.md",
+    "size": 3390,
+    "sha256": "ad5558332b0f3d5b32f549544722a56d504c6aff6557416a4134b4f25c5e83a6"
+  },
+  {
+    "path": "docs/R10_FAB_READY_BLOCKER_20260630.md",
+    "size": 2527,
+    "sha256": "7cff1c4fec27ec688bae9d45b96f7345993fa2bfe964e4143411b8f7e332ce83"
+  },
+  {
+    "path": "docs/R10_IMPLEMENTATION_CHECKLIST.md",
+    "size": 3555,
+    "sha256": "8ef6efbbe202450c4fad5926fb4da47b81fa25741f6bf2a3b92299cc733da920"
+  },
+  {
+    "path": "docs/R10_TRUE_CAN_FD_BOM_DELTA.md",
+    "size": 3025,
+    "sha256": "922266de11100c395d50020c39ab4481adb5ab70b6a2293029e200b2ad62584a"
+  },
+  {
+    "path": "docs/R10_TRUE_DUAL_CAN_FD_REDESIGN_PLAN.md",
+    "size": 4519,
+    "sha256": "6011fb51ef4e51649434d079b004571502acbffc3328ffd51f97688075c9b4f1"
+  },
+  {
+    "path": "docs/R9_COMPLETE_BOM.md",
+    "size": 3934,
+    "sha256": "369526f841226cccf13b78272ea9b8ddb92b66d550cd3f3d565d54e8ab5a78e5"
+  },
+  {
+    "path": "docs/R9_FAB_READY_STATUS.md",
+    "size": 1876,
+    "sha256": "e7f8299ab900639cd352dc1f521bc21e447a9ba188e651c1e21232996c513055"
+  },
+  {
+    "path": "docs/R9_SCHEMATIC_NETLIST.md",
+    "size": 3479,
+    "sha256": "de221af409e6b02dbda534f53a5c2bc07fb8ac7f4aca21d9ffb069c6c1a8e7a0"
+  },
+  {
+    "path": "fabrication/r10_autoroute/freerouting.log",
+    "size": 1730,
+    "sha256": "07a9ecf9becfc3e36a18629fdf441a63829f13fe71ad4763e4df1e8de1ef448f"
+  },
+  {
+    "path": "fabrication/r10_autoroute/freerouting2.log",
+    "size": 785,
+    "sha256": "c253a1461bc9f315f1e32467743a81408892bb6ae98fd6c6e1af487288d2cf23"
+  },
+  {
+    "path": "fabrication/r10_autoroute/freerouting3.log",
+    "size": 3127,
+    "sha256": "408a54c09bad2001dd003a7fcefa5060345ec2ea0de772e51fa075da67dfeddd"
+  },
+  {
+    "path": "fabrication/r10_autoroute/freerouting_file_do.log",
+    "size": 1730,
+    "sha256": "187e064da23b98749bc68760b9fb61c81f0f1182ed48e19d0212bd34fae62af1"
+  },
+  {
+    "path": "fabrication/r10_autoroute/freerouting_int.log",
+    "size": 1730,
+    "sha256": "7a41388e5c75ef1b2e4da21b932fa00b2cbf7bae223a2129d2b78f0eaf24fb34"
+  },
+  {
+    "path": "fabrication/r10_autoroute/r10.dsn",
+    "size": 82115,
+    "sha256": "f524d2ff6a07e7b06dde83ef61f5b8eaeb2897912550b0eaa9956375de73345a"
+  },
+  {
+    "path": "fabrication/r10_autoroute_mid/freerouting.log",
+    "size": 580,
+    "sha256": "bb85e74013cacbe54a6ddd878ab954427c3ee33382217892c0751e54111f16f2"
+  },
+  {
+    "path": "fabrication/r10_autoroute_mid/freerouting_long.log",
+    "size": 580,
+    "sha256": "24c8f4563e18fe12913baa3685f357d4866892336d2db58ffdae67b0522938f4"
+  },
+  {
+    "path": "fabrication/r10_autoroute_mid/r10_mid.dsn",
+    "size": 82119,
+    "sha256": "af787fd1fc426e8a841fd1e6a032b2209f759babb53bf691471ffd2e780dc0ff"
+  },
+  {
+    "path": "fabrication/r10_autoroute_wide/freerouting.log",
+    "size": 4705,
+    "sha256": "9cadfd0a5e58b284cd03ecf0351e37ab06ca43b89bece58aeab1de049c30e7ad"
+  },
+  {
+    "path": "fabrication/r10_autoroute_wide/r10_wide.dsn",
+    "size": 82128,
+    "sha256": "7a574a813de6302f62b59d395c95b1546bfeef0dcfa2891e4c927e81d1ae43d9"
+  },
+  {
+    "path": "fabrication/r10_autoroute_wide/r10_wide.rules",
+    "size": 1841,
+    "sha256": "8d0136ceb3ce546410ec141bdad58ae20f508b95d7f17e70e3dd6698631da8bd"
+  },
+  {
+    "path": "fabrication/r10_autoroute_wide/r10_wide.ses",
+    "size": 63507,
+    "sha256": "5dcf792434ae6f718e38994c68d58d5b7f59e3412692d03caa77aa78be30da06"
+  },
+  {
+    "path": "fabrication/r10_drc_after_c8_bottom_fix.rpt",
+    "size": 5821,
+    "sha256": "da2586c9114c27312e641b24e715f8d88d20ccbf5e6f53ffd2f3d851424861e1"
+  },
+  {
+    "path": "fabrication/r10_drc_after_jarvis_u6_clean.rpt",
+    "size": 7250,
+    "sha256": "e861e04d4da74b8cf25213d0d58661883f26617123651f1702f165e6eb08087b"
+  },
+  {
+    "path": "fabrication/r10_drc_after_jarvis_u6_clean2.rpt",
+    "size": 7262,
+    "sha256": "07eaab1fd7def390c5eea12ee63ea3853741ca6d90ca19d27d926ed1fce8e614"
+  },
+  {
+    "path": "fabrication/r10_drc_after_jarvis_u6_hardcoords.rpt",
+    "size": 6862,
+    "sha256": "69d566ffbe333d350cd1db33006cbc97605ae5b0c3307bbe58c4bd497e8baa0f"
+  },
+  {
+    "path": "fabrication/r10_drc_after_revert_u7_bad.rpt",
+    "size": 5456,
+    "sha256": "e0a2c5f0bcdeb4647d9bbc65c33b61ca7fa3a2d55bfeb16711a1390a26c2a034"
+  },
+  {
+    "path": "fabrication/r10_drc_after_route.rpt",
+    "size": 524,
+    "sha256": "ee6943360d5274c138e07d8d4e67f9636af69cb44f313f97eb760f6cbcc0a60d"
+  },
+  {
+    "path": "fabrication/r10_drc_after_u6_local_clean_final.rpt",
+    "size": 5478,
+    "sha256": "8132a18816ce3feb2d89c50788efccc1f6c707c91795739f672a308a22ab710a"
+  },
+  {
+    "path": "fabrication/r10_drc_after_u7_local.rpt",
+    "size": 10478,
+    "sha256": "453d2a13dc8369382316ded823affb6a9bbf1aa784aaaa26c7c67c594c561e1e"
+  },
+  {
+    "path": "fabrication/r10_drc_after_user_initial.rpt",
+    "size": 7250,
+    "sha256": "a8c616de4f0f61997f5d4d445258876a6177f77ce0e4da4e52ea53c515f4e1f3"
+  },
+  {
+    "path": "fabrication/r10_drc_bottom_placement.rpt",
+    "size": 8888,
+    "sha256": "d38885ca850145096d42f45207da305e093b82cdce9ee36c1350caf1cdbf1427"
+  },
+  {
+    "path": "fabrication/r10_drc_current_clean_placement.rpt",
+    "size": 8904,
+    "sha256": "d175ba9447d38fd313c6ef3271e0462dcd706d8df8166976bdf98486145a41f6"
+  },
+  {
+    "path": "fabrication/r10_drc_initial.rpt",
+    "size": 524,
+    "sha256": "e3cb909a6cc63dc93c89810f42d360b85520685e3ddabfc59018e2ad88673320"
+  },
+  {
+    "path": "fabrication/r10_drc_mid2_placement.rpt",
+    "size": 10073,
+    "sha256": "09a957cb3840b209045295af40b4b44c7d8f27d9e016266a54b5109e56e903cc"
+  },
+  {
+    "path": "fabrication/r10_drc_mid3_placement.rpt",
+    "size": 9119,
+    "sha256": "37bd9000d6a29a1865d34310be73a3cd636f8afd9186d8024231b4e5497cc007"
+  },
+  {
+    "path": "fabrication/r10_drc_mid4_placement.rpt",
+    "size": 8903,
+    "sha256": "0ce3f2f9837e8e701fbb8a8552281defdb76a489ae1e0932a69bcf02b8e5d79b"
+  },
+  {
+    "path": "fabrication/r10_drc_mid_direct1.rpt",
+    "size": 39037,
+    "sha256": "7510575cac117f06392d10499bfac6e3b145170c7f55520cc53383df78f8bc08"
+  },
+  {
+    "path": "fabrication/r10_drc_mid_placement.rpt",
+    "size": 17210,
+    "sha256": "6b74401a486c94bc72fe738f4fb871dd496c3c0ad0df277dfacd383a4db79710"
+  },
+  {
+    "path": "fabrication/r10_drc_near_placement.rpt",
+    "size": 17197,
+    "sha256": "d10f005124f938972b6dc139479b75cdee7eb107c9c067c7024225f84ef4da73"
+  },
+  {
+    "path": "fabrication/r10_drc_perimeter1.rpt",
+    "size": 61809,
+    "sha256": "89b68b0544719cd993ae53f0e4c10a0acf4d4c94cebf22f2a54bfb42d3a1a03d"
+  },
+  {
+    "path": "fabrication/r10_drc_placeholders.rpt",
+    "size": 12617,
+    "sha256": "e9e39e76d378e28046cb663004785ccbeb587fc00c17e84f4ad21a45c60bfa1c"
+  },
+  {
+    "path": "fabrication/r10_drc_placeholders_moved.rpt",
+    "size": 524,
+    "sha256": "9263ff8280390b87f5764beeb56c055da4107930418327323415896bfce0d1d0"
+  },
+  {
+    "path": "fabrication/r10_drc_placement.rpt",
+    "size": 530,
+    "sha256": "7b2331d32e1d17b712841d5c35b1e8c4ccbad599e2006bfed0d66c41e9fd364e"
+  },
+  {
+    "path": "fabrication/r10_drc_placement2.rpt",
+    "size": 530,
+    "sha256": "bdf0f82b045c9e7ae547a01f2bc48ea1d2767ae05d961e5d17a528c88bdbe0e0"
+  },
+  {
+    "path": "fabrication/r10_drc_placement3.rpt",
+    "size": 530,
+    "sha256": "173246c59659248d0642d349b2521ce6b7fba200f0d2c75b715ee0cf1c4f4642"
+  },
+  {
+    "path": "fabrication/r10_drc_placement4.rpt",
+    "size": 17210,
+    "sha256": "3a45f72b8e247e2679cdd71a95b54a2e1d85cbf3463a985aa5abcfa4abff3c2d"
+  },
+  {
+    "path": "fabrication/r10_drc_routed_attempt1.rpt",
+    "size": 50512,
+    "sha256": "8b20565b01bd0cce3efabc0d47bbebc88545811978e2f2c941cabe2cfa30f42c"
+  },
+  {
+    "path": "fabrication/r10_drc_scaffold.rpt",
+    "size": 524,
+    "sha256": "872c353331a8c5a75d3f8616d10e256126fa4d4451f56dc933a72994f4d92d13"
+  },
+  {
+    "path": "fabrication/r10_drc_shortfanout1.rpt",
+    "size": 32309,
+    "sha256": "6be18e4878aca856067eff9775b88f4121d20daa0d1e96380106cb4b56419d19"
+  },
+  {
+    "path": "fabrication/r10_drc_wide2_placement.rpt",
+    "size": 8882,
+    "sha256": "24c73e2bb96309f46d207d6cf1a39624bc0562be503dcabd2014f1c97bf547e5"
+  },
+  {
+    "path": "fabrication/r10_drc_wide_clean_for_gui.rpt",
+    "size": 8882,
+    "sha256": "a06a43726b530860c2c3fc27ecfcbaad696ba63373b43e3afcee60399e253976"
+  },
+  {
+    "path": "fabrication/r10_drc_wide_manual1.rpt",
+    "size": 37553,
+    "sha256": "8d6f65b8adbad91c96b1166c23c71baeb2f8423afc618fb02ac0e3d6b30e515f"
+  },
+  {
+    "path": "fabrication/r10_drc_wide_placement.rpt",
+    "size": 8899,
+    "sha256": "c00c05bb34b62e50a248987b0cfe8c6bb63918b79552de65079aaa35a377e74f"
+  },
+  {
+    "path": "fabrication/r10_test_final_drc.rpt",
+    "size": 487,
+    "sha256": "2ee3a63bc673ce03d2111639e51ee19a5326f8904ceb668bf5ea68b5b71e1fb1"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/README_STATUS.txt",
+    "size": 860,
+    "sha256": "7d1395628f1caae75f2703b0c1d3c7558511a177b95050989fea937ce988dcc7"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/docs/r10_test_final_drc.rpt",
+    "size": 487,
+    "sha256": "2ee3a63bc673ce03d2111639e51ee19a5326f8904ceb668bf5ea68b5b71e1fb1"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/docs/test-board-stats.txt",
+    "size": 1768,
+    "sha256": "55c279630d7e3f41270fda8d23cd4f1d935412b9d2024a7d2cef17fd8920c3f8"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/docs/test-pcb-bom.csv",
+    "size": 3682,
+    "sha256": "fc001ce0b0325feb50f648b25cf71e38d82bb15dcb1408fae51c295e1d2982e8"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/docs/test_top.png",
+    "size": 50421,
+    "sha256": "60f06e69dc1a1ebaaa57939f5e9585ffa33e7238956e05bc98fcd09fc9e5c323"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-B_Cu.gbl",
+    "size": 28540,
+    "sha256": "9cdc5c909c25e0947f918d9ce26dfd396982830aea4221bff0a6165683fd8857"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-B_Mask.gbs",
+    "size": 4484,
+    "sha256": "0a59682a7b707dd6205a0ec0213f688074897c4540a632b4627d46b7e7039fe8"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-B_Paste.gbp",
+    "size": 2728,
+    "sha256": "5a42a3b64280a0a278afb4f0571405d63a607a0541b9f0ca9e38303204c0e302"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-B_Silkscreen.gbo",
+    "size": 11893,
+    "sha256": "2973376590acd77441754352a513faeb8cc692a6222a1790c11fc252be06d4cd"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-Edge_Cuts.gm1",
+    "size": 633,
+    "sha256": "39713745a87e0ce671b2179f079c37eb646fbf7b6238b5b699dc5d70b89cb176"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-F_Cu.gtl",
+    "size": 24732,
+    "sha256": "e0aa0b4d550ad30d5ab0e038b9526fa56e588288e0ddb0f8910a9d6422efaff5"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-F_Mask.gts",
+    "size": 5633,
+    "sha256": "64b8336946c5069a4f443a53f2a491225c129da0f351f700945a8b340c7cffaf"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-F_Paste.gtp",
+    "size": 3491,
+    "sha256": "73603d6c21c021c81f60a52afa49beaac64bdbed82808185d2f94c429b636f52"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-F_Silkscreen.gto",
+    "size": 119684,
+    "sha256": "134b9e858671a426ef6ac7e635b37603be0aa5e5ffcc38e65d8f44d49e5d0887"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-drill-report.txt",
+    "size": 804,
+    "sha256": "196cf4c334552dd32bd5bedf6dd6ec3b4537cfd13c8f72045923e1660cb6f985"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-drl_map.pdf",
+    "size": 19834,
+    "sha256": "86956acc9e0abf77e907ac56cf2c857c29b3b65fdbc0183ffdd67984cdd2c34c"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-job.gbrjob",
+    "size": 2598,
+    "sha256": "4452e1ba60468356d88633027b6837462812ffa20c682d84eae18dcfe9bfe45d"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test-pos.csv",
+    "size": 3122,
+    "sha256": "38c6781dc06a7234a79422b6e8c1f852b6ae204e0a58ff8fdbf37807e93f19da"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test.drl",
+    "size": 2824,
+    "sha256": "8730069509c8fe01678c7164b99cfb03df37dcb85498a08d8ab157ab4ab22383"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/gerbers/test.ipc-d-356",
+    "size": 19213,
+    "sha256": "b9a24c256584a43ee85a4737fc80057e9376637082182cf8f4f3e98f92e363be"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/source/test.kicad_pcb",
+    "size": 350068,
+    "sha256": "09b192d3ad10c43916cb1ccf73244b1a329b2e0086a3fe1539cd3539c489f444"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/source/test.kicad_pro",
+    "size": 9802,
+    "sha256": "65c7a1a7a562a76126e678f38235df17dec080218716828a06fcea46c47b73b3"
+  },
+  {
+    "path": "fabrication/r10_test_full_package/source/test.rules",
+    "size": 1837,
+    "sha256": "d24b9c079fbe1c7b860b71e9b309dc5a4cbe9e1b897f71982c8fb6a47f4fd73e"
+  },
+  {
+    "path": "fabrication/r10_test_full_package.zip",
+    "size": 182533,
+    "sha256": "664d7556bda3c93d0fb504271f499e4ff969b4e8384fd0652552f1c8bce3b533"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-B_Cu.gbl",
+    "size": 28540,
+    "sha256": "9cdc5c909c25e0947f918d9ce26dfd396982830aea4221bff0a6165683fd8857"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-B_Mask.gbs",
+    "size": 4484,
+    "sha256": "0a59682a7b707dd6205a0ec0213f688074897c4540a632b4627d46b7e7039fe8"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-B_Paste.gbp",
+    "size": 2728,
+    "sha256": "5a42a3b64280a0a278afb4f0571405d63a607a0541b9f0ca9e38303204c0e302"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-B_Silkscreen.gbo",
+    "size": 11893,
+    "sha256": "2973376590acd77441754352a513faeb8cc692a6222a1790c11fc252be06d4cd"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-Edge_Cuts.gm1",
+    "size": 633,
+    "sha256": "39713745a87e0ce671b2179f079c37eb646fbf7b6238b5b699dc5d70b89cb176"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-F_Cu.gtl",
+    "size": 24732,
+    "sha256": "e0aa0b4d550ad30d5ab0e038b9526fa56e588288e0ddb0f8910a9d6422efaff5"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-F_Mask.gts",
+    "size": 5633,
+    "sha256": "64b8336946c5069a4f443a53f2a491225c129da0f351f700945a8b340c7cffaf"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-F_Paste.gtp",
+    "size": 3491,
+    "sha256": "73603d6c21c021c81f60a52afa49beaac64bdbed82808185d2f94c429b636f52"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-F_Silkscreen.gto",
+    "size": 119684,
+    "sha256": "134b9e858671a426ef6ac7e635b37603be0aa5e5ffcc38e65d8f44d49e5d0887"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-drill-report.txt",
+    "size": 804,
+    "sha256": "196cf4c334552dd32bd5bedf6dd6ec3b4537cfd13c8f72045923e1660cb6f985"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-drl_map.pdf",
+    "size": 19834,
+    "sha256": "86956acc9e0abf77e907ac56cf2c857c29b3b65fdbc0183ffdd67984cdd2c34c"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-job.gbrjob",
+    "size": 2598,
+    "sha256": "4452e1ba60468356d88633027b6837462812ffa20c682d84eae18dcfe9bfe45d"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test-pos.csv",
+    "size": 3122,
+    "sha256": "38c6781dc06a7234a79422b6e8c1f852b6ae204e0a58ff8fdbf37807e93f19da"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test.drl",
+    "size": 2824,
+    "sha256": "8730069509c8fe01678c7164b99cfb03df37dcb85498a08d8ab157ab4ab22383"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb/test.ipc-d-356",
+    "size": 19213,
+    "sha256": "b9a24c256584a43ee85a4737fc80057e9376637082182cf8f4f3e98f92e363be"
+  },
+  {
+    "path": "fabrication/r10_test_jlcpcb_gerbers.zip",
+    "size": 60376,
+    "sha256": "a0bff484ff1731d1f7af759e8a514f674a1645a16d96f4df1123a76977457b7a"
+  },
+  {
+    "path": "fabrication/r10_test_package_sha256.txt",
+    "size": 210,
+    "sha256": "ebe97932212dc087e9cc2dcb9a08983b0c75b42c53d4196c5c24c2f3850df03e"
+  },
+  {
+    "path": "fabrication/r10_test_review/svg",
+    "size": 290840,
+    "sha256": "dad6ce0de494bac52d77f2ae8d383a67cf082eb5ac2b2fe9c3ed3c40a578ed4e"
+  },
+  {
+    "path": "fabrication/r10_test_review/test_top.png",
+    "size": 50421,
+    "sha256": "60f06e69dc1a1ebaaa57939f5e9585ffa33e7238956e05bc98fcd09fc9e5c323"
+  },
+  {
+    "path": "fabrication/r9/gerbers/teensy-41-dual-canfd-lin-r9-final-candidate-B_Cu.gbl",
+    "size": 13896,
+    "sha256": "15a5ba3bae1c7a9bf4e70bd13fa9ff842d39d0be6287c4b9494167de47116850"
+  },
+  {
+    "path": "fabrication/r9/gerbers/teensy-41-dual-canfd-lin-r9-final-candidate-B_Mask.gbs",
+    "size": 2802,
+    "sha256": "2cafa0d5fb282bd6efcbb960b363da6b47c9b4fb6c5f9e2bdca433692a1b1edd"
+  },
+  {
+    "path": "fabrication/r9/gerbers/teensy-41-dual-canfd-lin-r9-final-candidate-B_Silkscreen.gbo",
+    "size": 503,
+    "sha256": "1cd0d6a1e8838e633a955b44074ca41c5e3121b89650569ec87aa36447877f91"
+  },
+  {
+    "path": "fabrication/r9/gerbers/teensy-41-dual-canfd-lin-r9-final-candidate-Edge_Cuts.gm1",
+    "size": 672,
+    "sha256": "356f27079a66f202fb1b5d7b65557e2ae079187392ca715812afe2a29e867d72"
+  },
+  {
+    "path": "fabrication/r9/gerbers/teensy-41-dual-canfd-lin-r9-final-candidate-F_Cu.gtl",
+    "size": 24196,
+    "sha256": "fae1750ea3d6849e4c6d51718f4d3a503a8bd0412cf851fafd847c8ebfd77e1b"
+  },
+  {
+    "path": "fabrication/r9/gerbers/teensy-41-dual-canfd-lin-r9-final-candidate-F_Mask.gts",
+    "size": 5423,
+    "sha256": "a5e832a1e748657acb7d7d3db35e7e1c9f419bc8fb8058d5946306e4381389bb"
+  },
+  {
+    "path": "fabrication/r9/gerbers/teensy-41-dual-canfd-lin-r9-final-candidate-F_Silkscreen.gto",
+    "size": 83198,
+    "sha256": "46644c7db87ab471ce0a1f2ff99e6ed725148064fb880af4756bee71dcc21819"
+  },
+  {
+    "path": "fabrication/r9/gerbers/teensy-41-dual-canfd-lin-r9-final-candidate-job.gbrjob",
+    "size": 2668,
+    "sha256": "1f820b34a13b434b552945b1ba0bc53f1a416511d39c7493612dab17cbda4ae8"
+  },
+  {
+    "path": "fabrication/r9/gerbers/teensy-41-dual-canfd-lin-r9-final-candidate.drl",
+    "size": 2526,
+    "sha256": "815ffa80e317d146e90e80d5ad9320cd08dfe5aee89074d021dddeb38102f54e"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_nosilk_20260629T101500Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-B_Cu.gbl",
+    "size": 13892,
+    "sha256": "d7817a6d265a20f9e800a61fc27df37e50eda421d908fb98996696e8027e93e4"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_nosilk_20260629T101500Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-B_Mask.gbs",
+    "size": 2798,
+    "sha256": "a9e315ed607e10f4e11c54e911e020b6c7d12488dc2b441313c6cfa7f3d99453"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_nosilk_20260629T101500Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-Edge_Cuts.gm1",
+    "size": 668,
+    "sha256": "d9c9023b8440327b50e2414646d6228562628e3f1f85ee7c0ac0aa593e18d4ae"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_nosilk_20260629T101500Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-F_Cu.gtl",
+    "size": 24192,
+    "sha256": "d75fdf658a43ded586d5b39f8246aef885791e0fdbaf22f93ae53101a197fff1"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_nosilk_20260629T101500Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-F_Mask.gts",
+    "size": 5419,
+    "sha256": "5bfe13aad075fb364bb73f2481c28a7193f135c77311e1d39dbeff1fafe9d80a"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_nosilk_20260629T101500Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-job.gbrjob",
+    "size": 2324,
+    "sha256": "914812ab3a7fb37da9fe002610f0f2e084c504376c571b3334ee47e8009a053b"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_nosilk_20260629T101500Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix.drl",
+    "size": 2526,
+    "sha256": "309abdd7b5679b3608d5f59a0007a0fa6d91b50b6ff4602cb6dee3b039a53a06"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_silkfix_20260629T094626Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-B_Cu.gbl",
+    "size": 13892,
+    "sha256": "0e2077539f6ce473abb5c8273e234db92c14eda4fb7b37efea6168bd1e636c09"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_silkfix_20260629T094626Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-B_Mask.gbs",
+    "size": 2798,
+    "sha256": "14d2cbcb8eb3aacf10cd56002f218b6a254ebc5f94f2fd5d375e3aa10e43aa6d"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_silkfix_20260629T094626Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-B_Silkscreen.gbo",
+    "size": 2808,
+    "sha256": "25d6f86843a66357a1ec490505c00f82a68ff1c040778b2572fa83898b0f5892"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_silkfix_20260629T094626Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-Edge_Cuts.gm1",
+    "size": 668,
+    "sha256": "66213e754fe2e25e118710ae5f585d8708806e03e701be1812581e8c623b871e"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_silkfix_20260629T094626Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-F_Cu.gtl",
+    "size": 24192,
+    "sha256": "6062dd5dc9178ef1625a49e63e6de210103e1954a9628a67dd834779f9a68702"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_silkfix_20260629T094626Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-F_Mask.gts",
+    "size": 5419,
+    "sha256": "ad6702f9bfa9dd39e276690abf0b7f1f33d043619a919074cd029a12f153ada8"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_silkfix_20260629T094626Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-F_Paste.gtp",
+    "size": 3288,
+    "sha256": "80f9ea755d4c8adf538540253f7594b20bcf1f839f8bb8346bb52ded9e69a266"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_silkfix_20260629T094626Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-F_Silkscreen.gto",
+    "size": 88095,
+    "sha256": "1276310f5013b4fcbdf9147d6d98d09c72f2c29b1f7b1fca120e44825803bf7e"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_silkfix_20260629T094626Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix-job.gbrjob",
+    "size": 1720,
+    "sha256": "cbea4cdad953ad71591ba7dca444747cb1ba90110cd080b0a16a3a7b920dba33"
+  },
+  {
+    "path": "fabrication/r9/gerbers_jlc_silkfix_20260629T094626Z/teensy-41-dual-canfd-lin-r9-jlc-silkfix.drl",
+    "size": 2526,
+    "sha256": "4fbeb10408b41a97a2bbd5e3159e22ec1275b728e831b6d19f8676e561054162"
+  },
+  {
+    "path": "fabrication/r9/package/FAB_READY_R9_CLEAN_SHARE_SHA256.txt",
+    "size": 198,
+    "sha256": "e29095e5c5d80eb7c52c36323f448687e9277da9a22d6d4e2f69ac60a892c9b7"
+  },
+  {
+    "path": "fabrication/r9/package/FAB_READY_R9_teensy-41-dual-canfd-lin_CLEAN_SHARE_20260622T122624Z.zip",
+    "size": 103151,
+    "sha256": "317f8ffba15fbea917d3f12836d707a79ea37509be6b607c4fd817b577771d37"
+  },
+  {
+    "path": "fabrication/r9/package/JLCPCB_R9_JLC_SILKFIX_SHA256.txt",
+    "size": 287,
+    "sha256": "a9ea748d9efd22e6eb5350622f8219e52fdd7521e6651e4360b863f8506a40c7"
+  },
+  {
+    "path": "fabrication/r9/package/JLCPCB_R9_NOSILK_SHA256.txt",
+    "size": 142,
+    "sha256": "72bf88a70dbb1cdf3dd5aa8d1231b37fe9538548b42a0b10b550dfa5ea4dac65"
+  },
+  {
+    "path": "fabrication/r9/package/JLCPCB_STENCIL_R9_FRONT_PASTE_20260629T094626Z.zip",
+    "size": 1926,
+    "sha256": "9eb4de3f5875f06c347c607f3e65f37edc2c77c711e7bf1826768ada0d7cb9ba"
+  },
+  {
+    "path": "fabrication/r9/package/JLCPCB_UPLOAD_R9_JLC_SILKFIX_GERBERS_20260629T094626Z.zip",
+    "size": 30110,
+    "sha256": "29364e7b4dc51a743bf5096e7a98fe817c0c0b5b58d173967a7c7d829d843632"
+  },
+  {
+    "path": "fabrication/r9/package/JLCPCB_UPLOAD_R9_NOSILK_GERBERS_20260629T101500Z.zip",
+    "size": 14130,
+    "sha256": "aa7b8e65b058fb386f445408de3171bc6650e2acfc77c80271a521d93a10be8f"
+  },
+  {
+    "path": "fabrication/r9/package/JLCPCB_UPLOAD_R9_SHA256.txt",
+    "size": 157,
+    "sha256": "28861223c22328e87fea0eaaa1988ba8ac276901dad82c9bc053df12f14fc591"
+  },
+  {
+    "path": "fabrication/r9/package/JLCPCB_UPLOAD_R9_teensy-41-dual-canfd-lin_GERBERS_ONLY_20260629.zip",
+    "size": 28622,
+    "sha256": "48bb759698e0248d32a82fbea188f86bcc9c9b2e903e5315862a93c9dfe105cf"
+  },
+  {
+    "path": "fabrication/r9/reports/drc-jlc-clean.rpt",
+    "size": 2683,
+    "sha256": "a398f7290f4ef77ab151ffa5e9b5bba84633f56c47910cc5a089f92ef437a7a1"
+  },
+  {
+    "path": "fabrication/r9/reports/drc-jlc-nosilk-source.rpt",
+    "size": 522,
+    "sha256": "36156bdad24ae57c4b2b8d1673ba33c27ffc2881498a3afaf0f6d8439dd648a5"
+  },
+  {
+    "path": "fabrication/r9/reports/drc-jlc-silkfix.rpt",
+    "size": 522,
+    "sha256": "ee9eb9f5abf33d568b3eb6798342fcca095fc2080ae464acb771a1d78019a033"
+  },
+  {
+    "path": "fabrication/r9/reports/drc-publish-worktree.rpt",
+    "size": 526,
+    "sha256": "ebf010a073f8813a13dbf7c1db769e17beced2c3bbd79faecce4aecd73e885bb"
+  },
+  {
+    "path": "fabrication/r9/reports/drc.rpt",
+    "size": 526,
+    "sha256": "8002eb822195feafdb825ecfd355adcedd4fce57e42588080cd2ed418b2fa5c8"
+  },
+  {
+    "path": "fabrication/r9/reports/summary.txt",
+    "size": 3424,
+    "sha256": "9740024e6525065a4d8726ecc9481aeb2d70830e0658a9106ac3e8783219b1a1"
+  },
+  {
+    "path": "fabrication/test_initial_drc.rpt",
+    "size": 487,
+    "sha256": "6ca523f19f2419a96567256288a42cbf418a260c83033cb711094fe2e536c71c"
+  },
+  {
+    "path": "fabrication/test_optimized_width_drc.rpt",
+    "size": 22776,
+    "sha256": "1246da61ab79d5c2315f7cd0e43d98c2c3d9efe53bb83eed0a6518ca23012968"
+  },
+  {
+    "path": "hardware/kicad/.history/.gitignore",
+    "size": 87,
+    "sha256": "1e18182125437ce3d2ec460b357a9ea06f059d795052de04a9a9f1044b8e20ba"
+  },
+  {
+    "path": "hardware/kicad/.history/README.txt",
+    "size": 554,
+    "sha256": "79c41e25e7633a1deff5e5a7456573c64f0061d508b7e0e5753d985456fe29e7"
+  },
+  {
+    "path": "hardware/kicad/.history/teensy-41-true-dual-canfd-lin-r10-wide-fab.kicad_pcb",
+    "size": 321861,
+    "sha256": "1e951dfc9a08e8a637e53688c1c8feb650572693705c75e1a3ce3b57a6f32e6c"
+  },
+  {
+    "path": "hardware/kicad/.history/test.kicad_pcb",
+    "size": 350068,
+    "sha256": "09b192d3ad10c43916cb1ccf73244b1a329b2e0086a3fe1539cd3539c489f444"
+  },
+  {
+    "path": "hardware/kicad/backup-before-jarvis-clean-user-routes.kicad_pcb",
+    "size": 317515,
+    "sha256": "7134f18f2ed0945f098f083a5493c5473ac83a84c9f7a8250b7ad5dfcc3c89e9"
+  },
+  {
+    "path": "hardware/kicad/fp-lib-table",
+    "size": 198,
+    "sha256": "a81153d0646795e2ce31dc602065e9da1d1c1f5938d5d13647b68e188d120912"
+  },
+  {
+    "path": "hardware/kicad/sym-lib-table",
+    "size": 224,
+    "sha256": "19301f4861e29fd7931c595ca52e41b38fb135c6706022813621306f7b4b86f6"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-can-lin.pretty/OBD2_J1962_16pin_PLACEHOLDER_VERIFY_PART.kicad_mod",
+    "size": 2782,
+    "sha256": "4ab3f93381750e7c87fb02594c29452275bf167612c1dc602d587e4e121d688b"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-can-lin.pretty/OBD2_J1962_16pin_RightAngle_AliExpress_VERIFY.kicad_mod",
+    "size": 4483,
+    "sha256": "5eac8af540c03fb19800cd02d65c83a5f86fe05248e01eb1cc32b5b2f86020a7"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-can-lin.pretty/OBD2_PigtailPads_Manufacturing.kicad_mod",
+    "size": 4872,
+    "sha256": "49153bd6155b0cb0de2ff54218b77e6aad06545ce1e78f2decdefe0a6a14c662"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-can-lin.pretty/Teensy_4.1_MainHeaders_PJRC_Audited.kicad_mod",
+    "size": 10363,
+    "sha256": "1394d32fad946d91a0bf080ba1cca1650a789cb37421ddf6ac2e3f3f4ac60ee5"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-can-lin.pretty/Teensy_4.1_Module_TH_VERIFY.kicad_mod",
+    "size": 5942,
+    "sha256": "8dc6f4f945487edaeca2958a237f839dfd79c2de81911257d9352775d52b77fd"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pcb",
+    "size": 272433,
+    "sha256": "dff3d4676ee593bead1712a005519c80a1da9a2a66401edf36f970696b4ea382"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-dual-canfd-lin-r9-final-candidate.kicad_prl",
+    "size": 2330,
+    "sha256": "d8999eb85e5618e5a259293f5dd41dae252dc0413e7c69d64ff4bd2a12b587d8"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pro",
+    "size": 9838,
+    "sha256": "040048a58a812681d71ee23921765717a59f1d4a32960f22b53177a085ae2027"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-dual-canfd-lin-r9-jlc-clean.kicad_pcb",
+    "size": 272433,
+    "sha256": "84b035abf2a3ff49ba58d7099d8bbb88673d2299b85003c94fdf7508d6a4f454"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-dual-canfd-lin-r9-jlc-clean.kicad_prl",
+    "size": 2324,
+    "sha256": "7962f8ed8c327bb5697708773816533828252bd23d65b403e5b5df4c02462119"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-dual-canfd-lin-r9-jlc-clean.kicad_pro",
+    "size": 9838,
+    "sha256": "040048a58a812681d71ee23921765717a59f1d4a32960f22b53177a085ae2027"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-dual-canfd-lin-r9-jlc-silkfix.kicad_pcb",
+    "size": 272433,
+    "sha256": "41af3f815dc5fc435c3ca39a0b59e0305c9b4ba2132f9d35efa72f8ebc6a449b"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-dual-canfd-lin-r9-jlc-silkfix.kicad_prl",
+    "size": 2326,
+    "sha256": "7c32cb313844eaca4de1cf85a1e340158ae5efd51215eb7b1b3a3d6b607bebf3"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-dual-canfd-lin-r9-jlc-silkfix.kicad_pro",
+    "size": 9838,
+    "sha256": "040048a58a812681d71ee23921765717a59f1d4a32960f22b53177a085ae2027"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-fab-candidate.kicad_pcb",
+    "size": 309947,
+    "sha256": "4892db6e512ea9679e10cc9f0c9ebe68bf69e7c600bbeb1eb003dbdb689a62fe"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-fab-candidate.kicad_prl",
+    "size": 2334,
+    "sha256": "1f0d33b3e567d7ea7e41868e0859a27fd6de4a3d965d3cb0fbf1caac149e597e"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-fab-candidate.kicad_pro",
+    "size": 9847,
+    "sha256": "02793a3bdf82e949db49860757c21b8d9ec4e27e0af9391658d315db52ce5af0"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-wide-fab.dsn",
+    "size": 275619,
+    "sha256": "e1e56c204722d5983e47c3cfcf9e9d454f6b9f9693b9f7725c9f9a3de06ffa73"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-wide-fab.kicad_pcb",
+    "size": 321861,
+    "sha256": "1e951dfc9a08e8a637e53688c1c8feb650572693705c75e1a3ce3b57a6f32e6c"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-wide-fab.kicad_prl",
+    "size": 2557,
+    "sha256": "f84f45a1ea41c3b423c93e4d10f57513f1f277255b2aaf054f5c1254d20807e8"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-wide-fab.kicad_pro",
+    "size": 9878,
+    "sha256": "7e9f6cae5afd165da71d31bfc36ece9c26b743ef3e0cf25bf3e76d04ee5d65cf"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-wide-fab.rules",
+    "size": 1816,
+    "sha256": "3e3904eec467a7f6aebd67be24abe393a19f08047eade44eb51a77fdb2ce4d7c"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-wide-fab.ses",
+    "size": 71671,
+    "sha256": "c430fa78b791edf846125b4ad8061d60935ea81f01b92613a754890a5c247ff2"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-working.kicad_pcb",
+    "size": 335289,
+    "sha256": "ac3eaa7bbb045c2b96f4cd6e5ae8394c44493fcbdc42d53c4b587cfe4caf791a"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-working.kicad_prl",
+    "size": 2328,
+    "sha256": "eb11884aed869075dafd8155813b7bf168c5315eca2ecc5636ee2170d0bfac62"
+  },
+  {
+    "path": "hardware/kicad/teensy-41-true-dual-canfd-lin-r10-working.kicad_pro",
+    "size": 9838,
+    "sha256": "040048a58a812681d71ee23921765717a59f1d4a32960f22b53177a085ae2027"
+  },
+  {
+    "path": "hardware/kicad/teensy-r10-canfd.kicad_sym",
+    "size": 3381,
+    "sha256": "6de41f6b2ce9d4511e4b6f10d66acce7543a83bea2322a4fd8dc563d21a28068"
+  },
+  {
+    "path": "hardware/kicad/test-optimized.kicad_prl",
+    "size": 2301,
+    "sha256": "d584c125ef56443568f490a361229bb4dbfa660966c61763fff509e10437f0e1"
+  },
+  {
+    "path": "hardware/kicad/test-optimized.kicad_pro",
+    "size": 9590,
+    "sha256": "2fd281a63c1089f273edc6cbb3e562e35c3fe0094f39bf2eeeef10f9ea3d6fdc"
+  },
+  {
+    "path": "hardware/kicad/test.backup-before-jarvis-opt-20260630-053953.kicad_pcb",
+    "size": 350068,
+    "sha256": "09b192d3ad10c43916cb1ccf73244b1a329b2e0086a3fe1539cd3539c489f444"
+  },
+  {
+    "path": "hardware/kicad/test.dsn",
+    "size": 60817,
+    "sha256": "870da58dd7c4f712a28ae53556c794ba9d4fd217dba8e32299c6e4e4e522e5bc"
+  },
+  {
+    "path": "hardware/kicad/test.kicad_pcb",
+    "size": 350068,
+    "sha256": "09b192d3ad10c43916cb1ccf73244b1a329b2e0086a3fe1539cd3539c489f444"
+  },
+  {
+    "path": "hardware/kicad/test.kicad_prl",
+    "size": 2291,
+    "sha256": "af4fa49ce4db40a20c4768d86cdc4eb99ddb87ca220fcbed723dd93bc3d762db"
+  },
+  {
+    "path": "hardware/kicad/test.kicad_pro",
+    "size": 9802,
+    "sha256": "65c7a1a7a562a76126e678f38235df17dec080218716828a06fcea46c47b73b3"
+  },
+  {
+    "path": "hardware/kicad/test.rules",
+    "size": 1837,
+    "sha256": "d24b9c079fbe1c7b860b71e9b309dc5a4cbe9e1b897f71982c8fb6a47f4fd73e"
+  },
+  {
+    "path": "hardware/kicad/test.ses",
+    "size": 38784,
+    "sha256": "b6e991f904ebeba902815d8064d4442370460f80bce2a40f34d82048b8e6cd30"
+  }
+]

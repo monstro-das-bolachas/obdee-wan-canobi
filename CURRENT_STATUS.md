@@ -1,68 +1,85 @@
 # Current project status
 
-Last checked/updated: 2026-06-22
+Last checked/updated: 2026-06-30
 
 ## Executive summary
 
-The active hardware revision is **R9 FAB_READY**: a Teensy 4.1 dual-CAN-FD + LIN/K automotive interface using OBD2 pigtail/cable solder pads and DIP-switch configurable routing.
+The active hardware revision is now **R10 true dual CAN FD + LIN/K**.
 
-R9 supersedes earlier intermediate variants for manufacturing/prototype ordering. The public repository has been cleaned so only R9 public source, fabrication outputs, reports, and user-facing docs are tracked.
+R10 includes the required external CAN FD controller architecture:
 
-## Authoritative R9 files
+```text
+Teensy 4.1 SPI bus
+  -> MCP2518FD controller A -> MCP2562FD transceiver A
+  -> MCP2518FD controller B -> MCP2562FD transceiver B
+TLIN1029 LIN/K interface retained
+```
 
-PCB source:
+The previous R9 hardware is archived as a classic CAN 2.0 + LIN/K reference design. R9 used CAN-FD-capable MCP2562FD physical transceivers, but did not include MCP2518FD or another CAN FD controller/MAC, so it is not true CAN FD.
 
-- `hardware/kicad/teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pcb`
-- `hardware/kicad/teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pro`
+## Active R10 files
 
-Project-local footprint support:
+Active revision folder:
 
-- `hardware/kicad/fp-lib-table`
-- `hardware/kicad/teensy-41-can-lin.pretty/`
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/`
 
-Fabrication package:
+KiCad source:
 
-- `fabrication/r9/package/FAB_READY_R9_teensy-41-dual-canfd-lin_CLEAN_SHARE_20260622T122624Z.zip`
-- `fabrication/r9/package/FAB_READY_R9_CLEAN_SHARE_SHA256.txt`
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/teensy-41-true-dual-canfd-lin-r10.kicad_pcb`
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/teensy-41-true-dual-canfd-lin-r10.kicad_pro`
 
-Gerbers/drill:
+Project-local support:
 
-- `fabrication/r9/gerbers/`
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/fp-lib-table`
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/sym-lib-table`
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/teensy-41-can-lin.pretty/`
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/teensy-r10-canfd.kicad_sym`
 
-Reports:
+## R10 verification
 
-- `fabrication/r9/reports/drc.rpt`
-- `fabrication/r9/reports/summary.txt`
+KiCad CLI 10.0.3 DRC was run from the cleaned active revision folder.
 
-## KiCad verification
+Report:
 
-Verified with KiCad CLI 10.0.3 from the cleaned project copy.
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/reports/R10_TRUE_DUAL_CANFD_DRC_RECHECK.rpt`
 
 Result:
 
 - DRC violations: 0
 - Unconnected pads/items: 0
 - Footprint errors: 0
-- Gerber/drill export: passed
 
-## R9 feature summary
+Manufacturing export was regenerated from the cleaned active folder.
 
-- Teensy 4.1 shield-style board.
-- Dual CAN-FD transceivers: MCP2562FD-E/SN with VIO at +3.3 V.
-- LIN/K transceiver: TLIN1029DRQ1 with +3.3 V RXD pull-up.
-- OBD2 pigtail solder pads and strain-relief holes instead of an uncertain board-mounted J1962 connector.
-- DIP-switch selectable CAN normal/cross routing.
-- DIP-switch selectable LIN/K source; exactly one LIN/K source should be enabled at a time.
-- Complete LM2596S-5.0 5 V buck regulator support circuit.
-- Corrected Teensy 4.1 side-row footprint: 23 upper / 24 lower pads.
+JLCPCB/root-upload package:
 
-## Manufacturing status
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/package/R10_TRUE_DUAL_CANFD_JLCPCB_GERBERS.zip`
 
-PCB fabrication status: **FAB_READY for first-run prototype order**.
+Full source/handoff package:
 
-Order a small prototype batch first. This remains prototype hardware and must be bench-tested before vehicle use.
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/package/R10_TRUE_DUAL_CANFD_FULL_PACKAGE.zip`
 
-## Required real-world checks
+Checksums:
+
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/package/R10_TRUE_DUAL_CANFD_SHA256.txt`
+
+## R9 status
+
+R9 is archived here:
+
+- `revisions/01_R9_CLASSIC_CAN_ARCHIVE/`
+
+R9 remains useful only as historical/reference material for:
+
+- power-section validation;
+- OBD pigtail solder-pad mechanics;
+- DIP switch ergonomics;
+- LIN/K source selection testing;
+- classic CAN 2.0 experimentation.
+
+R9 should not be ordered or presented as the final true dual CAN FD interface.
+
+## Required real-world checks before any vehicle connection
 
 1. Verify OBD2 pigtail pinout with a multimeter before soldering.
 2. Bench-test the power section with current limiting.
@@ -70,3 +87,4 @@ Order a small prototype batch first. This remains prototype hardware and must be
 4. Confirm DIP-switch settings.
 5. Start with passive/read-only firmware.
 6. Do not transmit vehicle frames until bench and passive capture tests pass.
+7. Confirm Teensy header orientation, pigtail pad mapping, and assembly-side choices before PCB order.

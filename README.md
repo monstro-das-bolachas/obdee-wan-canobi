@@ -1,49 +1,37 @@
-# Teensy 4.1 Dual CAN-FD + LIN/K shield
+# Teensy 4.1 true dual CAN FD + LIN/K interface
 
-This repository contains the public hardware release for a Teensy 4.1 based automotive diagnostics and reverse-engineering shield with dual CAN-FD transceivers and a LIN/K-line interface.
+This repository contains the cleaned public hardware release for a Teensy 4.1 based automotive diagnostics and reverse-engineering interface.
 
 ## Current active revision
 
-Use **R9 FAB_READY** for the first real-world prototype PCB order.
+The active revision is **R10 true dual CAN FD + LIN/K**.
 
-The repository is intentionally kept clean: only the latest public R9 hardware source, fabrication outputs, reports, and user-facing documentation are tracked. Intermediate R5/R6/R7 variants and private generation scripts were removed from the public tree.
+Authoritative active folder:
 
-## Repository layout
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/`
 
-- `hardware/kicad/` — authoritative R9 KiCad PCB project and local footprint library.
-- `fabrication/r9/gerbers/` — R9 Gerber/drill manufacturing outputs.
-- `fabrication/r9/reports/` — R9 KiCad CLI verification reports.
-- `fabrication/r9/package/` — clean FAB_READY release ZIP and SHA256 checksum.
-- `docs/` — user-facing hardware documentation.
-- `CHANGELOG.md` — revision notes.
-- `CURRENT_STATUS.md` — current manufacturing/prototype status.
+Active KiCad board:
 
-## Authoritative R9 PCB source
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/teensy-41-true-dual-canfd-lin-r10.kicad_pcb`
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/teensy-41-true-dual-canfd-lin-r10.kicad_pro`
 
-- `hardware/kicad/teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pcb`
-- `hardware/kicad/teensy-41-dual-canfd-lin-r9-final-candidate.kicad_pro`
-- `hardware/kicad/fp-lib-table`
-- `hardware/kicad/teensy-41-can-lin.pretty/`
+R10 architecture:
 
-Open the `.kicad_pro` file from inside `hardware/kicad/` so KiCad resolves the project-local footprint table correctly.
+```text
+Teensy 4.1 SPI bus
+  -> MCP2518FD CAN FD controller A -> MCP2562FD CAN transceiver A
+  -> MCP2518FD CAN FD controller B -> MCP2562FD CAN transceiver B
+LIN/K interface retained
+OBD pigtail pads and DIP-switch routing retained
+```
 
-## Fabrication package
+## Verification summary
 
-- `fabrication/r9/package/FAB_READY_R9_teensy-41-dual-canfd-lin_CLEAN_SHARE_20260622T122624Z.zip`
-- `fabrication/r9/package/FAB_READY_R9_CLEAN_SHARE_SHA256.txt`
+Verified from the cleaned active revision folder with KiCad CLI 10.0.3.
 
-Gerber/drill directory:
+Latest report:
 
-- `fabrication/r9/gerbers/`
-
-Verification reports:
-
-- `fabrication/r9/reports/drc.rpt`
-- `fabrication/r9/reports/summary.txt`
-
-## R9 verification summary
-
-Verified with KiCad CLI 10.0.3 from the cleaned project copy.
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/reports/R10_TRUE_DUAL_CANFD_DRC_RECHECK.rpt`
 
 Result:
 
@@ -51,41 +39,37 @@ Result:
 - Unconnected pads/items: 0
 - Footprint errors: 0
 - Gerber/drill export: passed
-- Local footprint-library warnings mitigated by including `fp-lib-table` and `teensy-41-can-lin.pretty/`
 
-## Hardware overview
+## Fabrication package
 
-R9 implements:
+JLCPCB/root-upload Gerber package:
 
-- Teensy 4.1 shield-style board.
-- Dual CAN-FD channels using MCP2562FD-E/SN transceivers with VIO tied to +3.3 V.
-- LIN/K-line interface using TLIN1029DRQ1, with RXD pulled up to +3.3 V.
-- OBD2 pigtail/cable solder pads instead of an uncertain board-mounted J1962 connector.
-- DIP-switch CAN normal/cross routing and LIN/K source selection.
-- Complete LM2596S-5.0 fixed 5 V buck regulator support section.
-- Corrected Teensy 4.1 side-row footprint: 23 upper / 24 lower side-row pads.
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/package/R10_TRUE_DUAL_CANFD_JLCPCB_GERBERS.zip`
 
-## DIP switch summary
+Full source/handoff package:
 
-SW1 selects CAN routing:
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/package/R10_TRUE_DUAL_CANFD_FULL_PACKAGE.zip`
 
-- 1+2: CAN A normal, OBD6/14
-- 3+4: CAN A crossed, OBD6/14
-- 5+6: CAN B normal, OBD3/11
-- 7+8: CAN B crossed, OBD3/11
+Checksums:
 
-SW2 selects LIN/K source:
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/package/R10_TRUE_DUAL_CANFD_SHA256.txt`
 
-- 1: OBD7
-- 2: OBD15
-- 3: OBD1
-- 4: OBD8
-- 5: OBD9
-- 6: OBD12
-- 7: OBD13
-- 8: AUX_LIN_K_IO
+Before ordering, visually confirm mechanical fit/orientation of the Teensy 4.1 headers, OBD/pigtail pad mapping, DIP switch orientation, and assembly side choices.
 
-Rule: enable exactly one LIN/K source at a time.
+## Repository layout
+
+- `README_START_HERE.txt` — short navigation guide.
+- `CURRENT_STATUS.md` — current revision status and safety notes.
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/` — active R10 true-CAN-FD KiCad source, reports, Gerbers, and packages.
+- `revisions/01_R9_CLASSIC_CAN_ARCHIVE/` — previous R9 classic-CAN archive retained for historical/reference purposes.
+- `99_MANIFESTS/` — cleanup and reorganization manifests.
+- `CHANGELOG.md` — revision notes.
+
+## R9 archive note
+
+R9 is retained only as a historical/classic-CAN archive. R9 used MCP2562FD CAN-FD-capable physical transceivers, but did not include external CAN FD controllers. Therefore R9 is not true dual CAN FD.
+
+Use R10 for the current true dual CAN FD design.
 
 ## Prototype safety
 
@@ -94,7 +78,7 @@ Before connecting to a vehicle:
 1. Verify every OBD2 pigtail wire-to-pin mapping with a multimeter.
 2. Assemble and bench-test the power section first with current limiting.
 3. Verify +5 V output before installing the Teensy.
-4. Verify +3.3 V VIO/pull-up compatibility at CAN/LIN IC pins.
+4. Verify +3.3 V VIO/pull-up compatibility at CAN/LIN/CAN-FD controller pins.
 5. Start with passive/read-only CAN firmware.
 6. Enable exactly one LIN/K source switch at a time.
 7. Do not transmit vehicle frames until bench and passive capture tests pass.
@@ -102,9 +86,3 @@ Before connecting to a vehicle:
 ## Scripts and automation
 
 No generation, packaging, verification, or publishing scripts are tracked in this public repository. Those remain private.
-
-## Firmware
-
-Firmware work can proceed before the PCB arrives, but keep defaults passive/read-only until the assembled hardware is bench-tested.
-
-The legacy schematic is not treated as authoritative for R9. R9 manufacturing confidence is based on the KiCad PCB source, project-local footprints, KiCad CLI DRC, and KiCad-generated Gerber/drill files.

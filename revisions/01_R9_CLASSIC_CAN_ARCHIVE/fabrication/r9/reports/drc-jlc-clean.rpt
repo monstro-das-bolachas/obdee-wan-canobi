@@ -1,0 +1,54 @@
+** Drc report for teensy-41-dual-canfd-lin-r9-jlc-clean.kicad_pcb **
+** Created on 2026-06-29T09:45:59 **
+** Report includes: Errors, Warnings **
+
+** Found 9 DRC violations **
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1674 mm)
+    Local override; error
+    @(31.4000 mm, 72.0000 mm): Track [+12V_PROTECTED] on F.Cu, length 11.3137 mm
+    @(24.0539 mm, 80.2192 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1733 mm)
+    Local override; error
+    @(108.4583 mm, 15.4583 mm): Track [CAN_A_H] on F.Cu, length 3.5945 mm
+    @(108.7112 mm, 16.5927 mm): Via [CAN_A_STB] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1523 mm)
+    Local override; error
+    @(92.1273 mm, 20.5073 mm): Track [CAN_A_RX] on F.Cu, length 25.4454 mm
+    @(94.9870 mm, 19.9050 mm): Via [+3V3] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1517 mm)
+    Local override; error
+    @(54.8884 mm, 28.1284 mm): Track [OBD3_CAN_B_PAIR_A_CANDIDATE] on F.Cu, length 40.7600 mm
+    @(39.7804 mm, 28.7301 mm): Via [OBD6_CAN_A_PAIR_A] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1589 mm)
+    Local override; error
+    @(121.5830 mm, 66.5611 mm): Via [LIN_TX] on F.Cu - B.Cu
+    @(122.1919 mm, 68.6736 mm): Track [+12V_PROTECTED] on F.Cu, length 2.3842 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1727 mm)
+    Local override; error
+    @(121.5830 mm, 66.5611 mm): Via [LIN_TX] on F.Cu - B.Cu
+    @(122.1919 mm, 66.2894 mm): Track [+12V_PROTECTED] on F.Cu, length 1.3193 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1753 mm)
+    Local override; error
+    @(112.3395 mm, 61.4331 mm): Via [LIN_EN] on F.Cu - B.Cu
+    @(111.7142 mm, 66.2283 mm): Track [CAN_A_H] on B.Cu, length 47.4870 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1950 mm)
+    Local override; error
+    @(95.8500 mm, 19.2600 mm): Track [CAN_A_L] on F.Cu, length 5.3453 mm
+    @(94.9870 mm, 19.9050 mm): Via [+3V3] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1582 mm)
+    Local override; error
+    @(156.9254 mm, 70.7293 mm): Via [+5V_REGULATED] on F.Cu - B.Cu
+    @(157.6248 mm, 70.8900 mm): Track [AUX_LIN_K_IO] on B.Cu, length 1.1464 mm
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
