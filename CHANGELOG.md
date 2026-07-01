@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-01 — Latest-tree cleanup and README polish
+
+- Polished the public README for the renamed `obdee-wan-canobi` repository.
+- Removed cleanup manifests from the latest branch.
+- Removed duplicated R10/R9 revision folders from the latest tree; those snapshots remain available through Git history/releases/tags.
+- Kept only the active R11 prototype candidate under `revisions/`.
+- Rechecked the active R11 KiCad board with KiCad CLI after cleanup: 0 DRC violations, 1 reviewed GND zone-to-zone residual.
+
 ## 2026-06-30 — R10 status correction: NOT FOR FAB
 
 - Reclassified R10 as an inspection/review revision only after external review.

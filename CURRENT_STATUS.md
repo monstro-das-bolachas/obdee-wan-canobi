@@ -72,6 +72,11 @@ Before vehicle testing:
 6. Verify DIP switch safe/default positions.
 7. Test CAN/LIN/K behavior on bench hardware before a fused OBD vehicle connection.
 
-## R10/R9 status
+## Previous revision status
 
-R10 remains archived as `NOT FOR FAB` after external review. R9 remains historical/reference material only and is not true dual CAN FD.
+The latest working tree intentionally keeps only the active R11 prototype candidate under `revisions/`.
+
+R10 and R9 remain available through GitHub history/releases/tags, but are no longer duplicated in the latest repository tree:
+
+- R10: `NOT FOR FAB` after external review.
+- R9: historical/reference material only; not true dual CAN FD.

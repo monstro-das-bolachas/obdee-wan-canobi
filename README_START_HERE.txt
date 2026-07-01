@@ -24,7 +24,6 @@ You may order a small bare-PCB prototype batch from JLCPCB/PCBWay for bench brin
    - Gerbers/drill: exported successfully
 
 6. Previous revisions:
-   - R10 remains NOT FOR FAB / archive after review.
-   - R9 remains historical/classic-CAN archive material only.
+   R10 and R9 are preserved in GitHub history/releases/tags, not duplicated in the latest revisions folder.
 
 Read CURRENT_STATUS.md before ordering or assembling.

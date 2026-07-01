@@ -87,8 +87,7 @@ Before connecting to a vehicle:
 | `README_START_HERE.txt` | Short navigation and safety guide |
 | `CURRENT_STATUS.md` | Current revision status, ordering notes, and verification summary |
 | `revisions/00_WORK_R11_TRUE_DUAL_CANFD/` | Active R11 prototype candidate source and release package |
-| `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/` | Previous R10 archive, not for fabrication |
-| `revisions/01_R9_CLASSIC_CAN_ARCHIVE/` | Historical R9 classic-CAN reference |
+| GitHub releases / tags | Previous R10 and R9 snapshots; not duplicated in the latest working tree |
 | `LICENSE` | Main hardware license: CERN-OHL-P-2.0 |
 | `LICENSES/` | Full license texts and license split documentation |
 
