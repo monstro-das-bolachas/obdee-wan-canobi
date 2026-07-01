@@ -1,67 +1,88 @@
-# Teensy 4.1 true dual CAN FD + LIN/K interface
+# OBDee-Wan CANobi
 
-This repository contains hardware work for a Teensy 4.1 based automotive diagnostics and reverse-engineering interface.
+An open-source, open-hardware automotive bus interface for hackers, makers, reverse engineers, and the dangerously curious.
 
-## Current status — R10 is NOT FOR FAB
+OBDee-Wan CANobi is a Teensy 4.1 based vehicle-network tool for CAN FD, classic CAN, LIN, and K-line exploration. The goal is to make a powerful interface that is still understandable, inspectable, modifiable, and buildable by everyday tinkerers.
 
-The active revision is **R10 true dual CAN FD + LIN/K**, but it is an **inspection/review revision only**.
+This project is not meant to be a black box. It is meant to be a teaching tool, a hacking platform, and a practical bridge between a laptop and the electrical nervous system of a vehicle.
 
-**Do not order R10 boards. Do not upload the R10 Gerber ZIP to JLCPCB.**
+## What it is
 
-R10 corrected the major architecture problem by adding true external CAN FD controllers:
+The current design targets:
 
-```text
-Teensy 4.1 SPI bus
-  -> MCP2518FD CAN FD controller A -> MCP2562FD CAN transceiver A
-  -> MCP2518FD CAN FD controller B -> MCP2562FD CAN transceiver B
-LIN/K interface retained
-OBD pigtail pads and DIP-switch routing retained
-```
+- Teensy 4.1 host MCU
+- dual external CAN FD controllers
+- dual CAN FD transceivers
+- LIN / K-line interface support
+- OBD pigtail-friendly wiring
+- DIP-switch configurable routing
+- KiCad hardware source files
+- prototype manufacturing packages
 
-However, an external review found that R10 is not fabrication-ready because it lacks an authoritative `.kicad_sch` schematic/ERC and still has power, protection, default-state, layout, decoupling, USB/VIN isolation, and documentation blockers.
+Useful for:
 
-Authoritative active folder:
+- automotive reverse engineering
+- CAN FD experimentation
+- LIN and K-line learning
+- custom diagnostic tools
+- EV conversion projects
+- maker/hacker education
+- bench testing vehicle modules
 
-- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/`
+## Current status — R11 prototype manufacturing candidate
 
-Active KiCad PCB-only inspection board:
+R11 is suitable for ordering a small bare-PCB prototype batch for bench bring-up.
 
-- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/teensy-41-true-dual-canfd-lin-r10.kicad_pcb`
-- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/teensy-41-true-dual-canfd-lin-r10.kicad_pro`
+It is not approved for direct vehicle testing yet.
 
-Important blocker document:
+Current release:
 
-- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/docs/R10_EXTERNAL_REVIEW_FINDINGS_20260630.md`
+- `revisions/00_WORK_R11_TRUE_DUAL_CANFD/release/R11_PROTOTYPE_MANUFACTURING_CANDIDATE_20260630/`
 
-## Verification summary
+JLCPCB / PCBWay upload ZIP:
 
-KiCad CLI DRC from the cleaned active revision folder reported:
+- `revisions/00_WORK_R11_TRUE_DUAL_CANFD/release/R11_PROTOTYPE_MANUFACTURING_CANDIDATE_20260630/package/JLCPCB_PCBWAY_UPLOAD_R11_MINIMAL_GERBERS_ONLY_20260630.zip`
 
-- DRC violations: 0
-- Unconnected pads/items: 0
-- Footprint errors: 0
+Verification summary:
 
-This DRC result proves that the existing PCB geometry is internally routable. It does **not** prove the design is safe or fabrication-ready. R10 has no real schematic, no meaningful ERC, and unresolved automotive/power-layout blockers.
+- KiCad CLI DRC: 0 violations
+- Known residual: one GND zone-to-zone report at 1.0000 mm / 1.0000 mm
+- GND continuity: visually confirmed in KiCad after refill/highlight
+- Gerbers/drill: exported successfully
 
-## Package warning
-
-The existing R10 ZIPs are retained only for inspection/archive unless superseded by R10A/R11.
-
-Do not use `R10_TRUE_DUAL_CANFD_JLCPCB_GERBERS.zip` for ordering.
+Before vehicle connection, assembled boards must pass bare-board continuity, power rail checks, current-limited bench power-up, OBD/pigtail pin mapping, DIP-switch default review, and CAN/LIN/K bench testing.
 
 ## Repository layout
 
-- `README_START_HERE.txt` — short navigation guide.
-- `CURRENT_STATUS.md` — current revision status and safety notes.
-- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/` — active R10 inspection/review material.
-- `revisions/01_R9_CLASSIC_CAN_ARCHIVE/` — previous R9 classic-CAN archive retained for historical/reference purposes.
-- `99_MANIFESTS/` — cleanup and reorganization manifests.
-- `CHANGELOG.md` — revision notes.
+- `README_START_HERE.txt` — short navigation and safety guide.
+- `CURRENT_STATUS.md` — current revision status and ordering notes.
+- `revisions/00_WORK_R11_TRUE_DUAL_CANFD/` — active R11 prototype manufacturing candidate.
+- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/` — previous R10 archive, not for fabrication.
+- `revisions/01_R9_CLASSIC_CAN_ARCHIVE/` — previous R9 classic-CAN archive.
+- `LICENSE` and `LICENSES/` — open hardware, software, and documentation license texts.
 
-## R9 archive note
+## Safety warning
 
-R9 is retained only as a historical/classic-CAN archive. R9 used MCP2562FD CAN-FD-capable physical transceivers, but did not include external CAN FD controllers. Therefore R9 is not true dual CAN FD.
+Vehicle electrical systems can damage tools, modules, or cars if connected incorrectly.
 
-## Next target
+This project is provided for education, experimentation, and bench validation. Use at your own risk. Do not connect untested hardware directly to a vehicle.
 
-The next orderable target should be **R10A/R11**, with a real schematic/ERC, corrected LIN/CAN default states, corrected buck/power layout, GND pours, local decoupling, ESD protection, USB/VIN isolation, and regenerated manufacturing outputs.
+When in doubt:
+
+- use a bench supply
+- use current limiting
+- use fuses
+- verify pinouts with a multimeter
+- test on spare modules before testing on a car
+
+## License
+
+This project is open source and open hardware.
+
+- Hardware design files: CERN-OHL-P-2.0
+- Firmware/software/scripts: MIT
+- Documentation: CC-BY-4.0
+
+You are free to study, modify, build, remix, and share this project. Attribution is required where applicable: please credit the original project and author when reusing or publishing derivative work.
+
+See `LICENSES/README.md` for the license split and SPDX identifiers.
