@@ -1,0 +1,653 @@
+(export
+	(version "E")
+	(design
+		(source "/home/kali/teensy-r9-publish/revisions/00_WORK_R11_TRUE_DUAL_CANFD/kicad/teensy-41-true-dual-canfd-lin-r11_JARVIS_ROUTED_CLEAN_V2_GND_STITCH.kicad_sch")
+		(date "2026-07-01T04:53:19")
+		(tool "Eeschema 10.0.3+dfsg-1")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "OBDee-Wan CANobi R11 PCB-derived schematic catalog")
+				(company "monstro-das-bolachas")
+				(rev "R11")
+				(date "2026-07-01")
+				(source "teensy-41-true-dual-canfd-lin-r11_JARVIS_ROUTED_CLEAN_V2_GND_STITCH.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components)
+	(groups)
+	(variants)
+	(libparts)
+	(libraries)
+	(nets
+		(net
+			(code "1")
+			(name "unconnected-(C1-Pad??)")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "2")
+			(name "unconnected-(C2-Pad??)")
+			(class "Default")
+			(node
+				(ref "C2")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "3")
+			(name "unconnected-(C3-Pad??)")
+			(class "Default")
+			(node
+				(ref "C3")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "4")
+			(name "unconnected-(C4-Pad??)")
+			(class "Default")
+			(node
+				(ref "C4")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "5")
+			(name "unconnected-(C5-Pad??)")
+			(class "Default")
+			(node
+				(ref "C5")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "6")
+			(name "unconnected-(C6-Pad??)")
+			(class "Default")
+			(node
+				(ref "C6")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "7")
+			(name "unconnected-(C7-Pad??)")
+			(class "Default")
+			(node
+				(ref "C7")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "8")
+			(name "unconnected-(C8-Pad??)")
+			(class "Default")
+			(node
+				(ref "C8")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "9")
+			(name "unconnected-(C9-Pad??)")
+			(class "Default")
+			(node
+				(ref "C9")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "10")
+			(name "unconnected-(C10-Pad??)")
+			(class "Default")
+			(node
+				(ref "C10")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "11")
+			(name "unconnected-(C11-Pad??)")
+			(class "Default")
+			(node
+				(ref "C11")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "12")
+			(name "unconnected-(C12-Pad??)")
+			(class "Default")
+			(node
+				(ref "C12")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "13")
+			(name "unconnected-(C13-Pad??)")
+			(class "Default")
+			(node
+				(ref "C13")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "14")
+			(name "unconnected-(D1-Pad??)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "15")
+			(name "unconnected-(D2-Pad??)")
+			(class "Default")
+			(node
+				(ref "D2")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "16")
+			(name "unconnected-(D3-Pad??)")
+			(class "Default")
+			(node
+				(ref "D3")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "17")
+			(name "unconnected-(D4-Pad??)")
+			(class "Default")
+			(node
+				(ref "D4")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "18")
+			(name "unconnected-(D5-Pad??)")
+			(class "Default")
+			(node
+				(ref "D5")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "19")
+			(name "unconnected-(D6-Pad??)")
+			(class "Default")
+			(node
+				(ref "D6")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "20")
+			(name "unconnected-(D7-Pad??)")
+			(class "Default")
+			(node
+				(ref "D7")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "21")
+			(name "unconnected-(D8-Pad??)")
+			(class "Default")
+			(node
+				(ref "D8")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "22")
+			(name "unconnected-(F1-Pad??)")
+			(class "Default")
+			(node
+				(ref "F1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "23")
+			(name "unconnected-(J1-Pad??)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "24")
+			(name "unconnected-(J2-Pad??)")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "25")
+			(name "unconnected-(JP1-Pad??)")
+			(class "Default")
+			(node
+				(ref "JP1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "26")
+			(name "unconnected-(L1-Pad??)")
+			(class "Default")
+			(node
+				(ref "L1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "27")
+			(name "unconnected-(MH1-Pad??)")
+			(class "Default")
+			(node
+				(ref "MH1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "28")
+			(name "unconnected-(MH2-Pad??)")
+			(class "Default")
+			(node
+				(ref "MH2")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "29")
+			(name "unconnected-(MH3-Pad??)")
+			(class "Default")
+			(node
+				(ref "MH3")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "30")
+			(name "unconnected-(MH4-Pad??)")
+			(class "Default")
+			(node
+				(ref "MH4")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "31")
+			(name "unconnected-(R1-Pad??)")
+			(class "Default")
+			(node
+				(ref "R1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "32")
+			(name "unconnected-(R11-Pad??)")
+			(class "Default")
+			(node
+				(ref "R11")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "33")
+			(name "unconnected-(R12-Pad??)")
+			(class "Default")
+			(node
+				(ref "R12")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "34")
+			(name "unconnected-(R13-Pad??)")
+			(class "Default")
+			(node
+				(ref "R13")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "35")
+			(name "unconnected-(R14-Pad??)")
+			(class "Default")
+			(node
+				(ref "R14")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "36")
+			(name "unconnected-(R15-Pad??)")
+			(class "Default")
+			(node
+				(ref "R15")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "37")
+			(name "unconnected-(R16-Pad??)")
+			(class "Default")
+			(node
+				(ref "R16")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "38")
+			(name "unconnected-(SR1-Pad??)")
+			(class "Default")
+			(node
+				(ref "SR1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "39")
+			(name "unconnected-(SR2-Pad??)")
+			(class "Default")
+			(node
+				(ref "SR2")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "40")
+			(name "unconnected-(SW1-Pad??)")
+			(class "Default")
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "41")
+			(name "unconnected-(SW2-Pad??)")
+			(class "Default")
+			(node
+				(ref "SW2")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "42")
+			(name "unconnected-(TP1-Pad??)")
+			(class "Default")
+			(node
+				(ref "TP1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "43")
+			(name "unconnected-(TP2-Pad??)")
+			(class "Default")
+			(node
+				(ref "TP2")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "44")
+			(name "unconnected-(TP3-Pad??)")
+			(class "Default")
+			(node
+				(ref "TP3")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "45")
+			(name "unconnected-(TP4-Pad??)")
+			(class "Default")
+			(node
+				(ref "TP4")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "46")
+			(name "unconnected-(TP5-Pad??)")
+			(class "Default")
+			(node
+				(ref "TP5")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "47")
+			(name "unconnected-(TP6-Pad??)")
+			(class "Default")
+			(node
+				(ref "TP6")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "48")
+			(name "unconnected-(TP7-Pad??)")
+			(class "Default")
+			(node
+				(ref "TP7")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "49")
+			(name "unconnected-(TP8-Pad??)")
+			(class "Default")
+			(node
+				(ref "TP8")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "50")
+			(name "unconnected-(TP9-Pad??)")
+			(class "Default")
+			(node
+				(ref "TP9")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "51")
+			(name "unconnected-(U1-Pad??)")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "52")
+			(name "unconnected-(U2-Pad??)")
+			(class "Default")
+			(node
+				(ref "U2")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "53")
+			(name "unconnected-(U3-Pad??)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "54")
+			(name "unconnected-(U4-Pad??)")
+			(class "Default")
+			(node
+				(ref "U4")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "55")
+			(name "unconnected-(U5-Pad??)")
+			(class "Default")
+			(node
+				(ref "U5")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "56")
+			(name "unconnected-(U6-Pad??)")
+			(class "Default")
+			(node
+				(ref "U6")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "57")
+			(name "unconnected-(U7-Pad??)")
+			(class "Default")
+			(node
+				(ref "U7")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "58")
+			(name "unconnected-(Y1-Pad??)")
+			(class "Default")
+			(node
+				(ref "Y1")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "59")
+			(name "unconnected-(Y2-Pad??)")
+			(class "Default")
+			(node
+				(ref "Y2")
+				(pin "1")
+				(pintype "unspecified+no_connect")
+			)
+		)
+	)
+)

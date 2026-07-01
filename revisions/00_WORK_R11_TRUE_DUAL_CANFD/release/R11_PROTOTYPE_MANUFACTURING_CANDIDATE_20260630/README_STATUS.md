@@ -19,6 +19,13 @@ Verification:
 - GND continuity: visually confirmed in KiCad by user after zone refill/highlight.
 - Gerber/drill export: completed by KiCad CLI.
 
+
+Schematic/BOM update:
+- PCB-derived KiCad schematic catalog is included in `kicad/`.
+- KiCad ERC on that schematic catalog: 0 errors / 0 warnings.
+- BOM, grouped BOM, JLCPCB draft BOM/CPL, KiCad BOM XML, and PCB-derived pad/net exports are included in `docs/`.
+- Limitation: schematic is PCB-derived for catalog/BOM/ERC; it is not a hand-reviewed functional wired schematic yet.
+
 Do not use on a vehicle until:
 1. Bare PCB continuity is checked.
 2. Power rails are checked for shorts.

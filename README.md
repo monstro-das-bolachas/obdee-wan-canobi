@@ -57,10 +57,12 @@ SHA256:
 | Check | Result |
 | --- | --- |
 | KiCad CLI PCB DRC | 0 violations |
+| KiCad schematic catalog ERC | 0 errors / 0 warnings |
 | Footprint errors | 0 |
 | Known residual | 1 GND zone-to-zone report at 1.0000 mm / 1.0000 mm |
 | Gerber/drill export | Successful |
 | GND continuity | Visually confirmed in KiCad after refill/highlight |
+| BOM/CPL | PCB-derived BOM, grouped BOM, JLCPCB draft BOM/CPL included |
 | Vehicle-use approval | Not yet; bench validation required first |
 
 The remaining GND item is a reviewed KiCad zone-report artifact for prototype PCB ordering. It is not a blanket safety approval for vehicle connection.
@@ -87,6 +89,9 @@ Before connecting to a vehicle:
 | `README_START_HERE.txt` | Short navigation and safety guide |
 | `CURRENT_STATUS.md` | Current revision status, ordering notes, and verification summary |
 | `revisions/00_WORK_R11_TRUE_DUAL_CANFD/` | Active R11 prototype candidate source and release package |
+| `revisions/00_WORK_R11_TRUE_DUAL_CANFD/docs/R11_BOM_FROM_PCB.md` | PCB-derived R11 BOM and procurement-review starting point |
+| `revisions/00_WORK_R11_TRUE_DUAL_CANFD/docs/R11_PCB_DERIVED_NETLIST.md` | Pad/net evidence exported from the active PCB |
+| `LOCAL_ARCHIVE_POINTERS.md` | Local-only pointers to R2-R10 evolution archives on this machine |
 | GitHub releases / tags | Previous R10 and R9 snapshots; not duplicated in the latest working tree |
 | `LICENSE` | Main hardware license: CERN-OHL-P-2.0 |
 | `LICENSES/` | Full license texts and license split documentation |

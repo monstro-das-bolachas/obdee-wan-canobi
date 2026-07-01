@@ -50,6 +50,20 @@ Result:
 
 The residual GND item is treated as a reviewed KiCad zone-report artifact for prototype PCB ordering, not as approval for vehicle use.
 
+## R11 schematic/BOM completion
+
+Added on 2026-07-01 from the active PCB:
+
+- PCB-derived KiCad schematic catalog: `revisions/00_WORK_R11_TRUE_DUAL_CANFD/kicad/teensy-41-true-dual-canfd-lin-r11_JARVIS_ROUTED_CLEAN_V2_GND_STITCH.kicad_sch`
+- KiCad ERC on the generated schematic catalog: 0 errors / 0 warnings
+- KiCad schematic netlist export: `revisions/00_WORK_R11_TRUE_DUAL_CANFD/docs/R11_PCB_DERIVED_SCHEMATIC_NETLIST.xml`
+- BOM: `revisions/00_WORK_R11_TRUE_DUAL_CANFD/docs/R11_BOM_FROM_PCB.md` and `.csv`
+- Grouped BOM: `revisions/00_WORK_R11_TRUE_DUAL_CANFD/docs/R11_BOM_GROUPED_FROM_PCB.csv`
+- JLCPCB draft BOM/CPL: `R11_JLCPCB_BOM_DRAFT.csv`, `R11_JLCPCB_CPL_DRAFT.csv`
+- PCB-derived pad/net table: `R11_PCB_DERIVED_NETLIST.md`, `R11_PAD_NETS_FROM_PCB.csv`
+
+Important limitation: this schematic is a PCB-derived catalog with footprint links and BOM/ERC proof, not yet a hand-reviewed functional wired schematic. The active PCB remains the layout authority; the pad/net table is the electrical evidence for review.
+
 ## R11 prototype ordering guidance
 
 Order only a small bare-PCB batch first:

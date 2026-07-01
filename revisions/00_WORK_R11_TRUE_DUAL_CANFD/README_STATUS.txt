@@ -20,6 +20,12 @@ Verification:
   - Footprint errors: 0
   - Gerber/drill export: PASS
 
+Schematic/BOM completion:
+  - PCB-derived KiCad schematic catalog created: kicad/teensy-41-true-dual-canfd-lin-r11_JARVIS_ROUTED_CLEAN_V2_GND_STITCH.kicad_sch
+  - ERC on generated schematic catalog: 0 errors / 0 warnings
+  - Formal PCB-derived BOM and JLCPCB draft BOM/CPL are in docs/ and release docs/.
+  - Limitation: schematic is footprint/BOM/net-documentation derived from PCB, not a hand-reviewed functional wired schematic yet.
+
 Ordering guidance:
   OK to order 2-5 bare prototype PCBs for bench validation only.
   Do not order assembly yet.

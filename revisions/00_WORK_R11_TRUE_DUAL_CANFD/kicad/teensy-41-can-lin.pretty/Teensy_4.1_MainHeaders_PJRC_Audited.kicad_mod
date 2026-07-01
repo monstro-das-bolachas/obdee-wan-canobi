@@ -4,9 +4,9 @@
 	(generator_version "10.0")
 	(layer "F.Cu")
 	(property "Reference" "U1"
-		(at 118 11 0)
+		(at 118 11 180)
 		(layer "F.SilkS")
-		(uuid "cd0fbcc7-b85f-4255-a15d-b9007e200930")
+		(uuid "576f392e-a308-4d07-a344-974c0b3015b3")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14,9 +14,9 @@
 		)
 	)
 	(property "Value" "TEENSY_4.1_MAIN_HEADERS_PJRC_AUDITED"
-		(at 118 35 0)
+		(at 118 35 180)
 		(layer "F.Fab")
-		(uuid "8fbdc116-1370-479b-a4e0-b7be1aae3cec")
+		(uuid "80fe598b-4547-4fdd-883b-dfe1eb94d717")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -24,10 +24,10 @@
 		)
 	)
 	(property "Datasheet" ""
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "88fb3d1d-8cd5-4ce3-bf66-e408e4f82189")
+		(uuid "cdf822e5-1d6b-47ab-8240-0fdd2d9e909e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -35,10 +35,10 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0fdf2ed5-cb36-477c-a78e-95ab2f6ce4cb")
+		(uuid "1ac61dc4-e9d2-4be1-9af0-31ec8bfd94f2")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -50,7 +50,7 @@
 		(start 116 13)
 		(end 178.5 13)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -60,7 +60,7 @@
 		(start 116 32.299999)
 		(end 116 13)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -70,7 +70,7 @@
 		(start 178.5 13)
 		(end 178.5 32.299999)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -80,7 +80,7 @@
 		(start 178.5 32.299999)
 		(end 116 32.299999)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")

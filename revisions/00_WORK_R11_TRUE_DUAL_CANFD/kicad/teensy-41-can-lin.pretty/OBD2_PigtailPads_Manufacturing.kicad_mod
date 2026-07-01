@@ -6,7 +6,7 @@
 	(property "Reference" "J1"
 		(at 12 12 0)
 		(layer "F.SilkS")
-		(uuid "7f0aa3f6-fc50-45d9-b71a-8bb3a2ec914a")
+		(uuid "5d56964a-ba5e-4e3b-9872-1cf550c3f8c8")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16,7 +16,7 @@
 	(property "Value" "OBD2_PIGTAIL_16_WIRE_SOLDER_PADS"
 		(at 12 57 0)
 		(layer "F.Fab")
-		(uuid "24985bc5-5921-4a85-b46a-d22eea0f06c4")
+		(uuid "841ae647-e857-4692-81ba-5d74e209300f")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -27,7 +27,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ed401bac-4cf2-45cd-ae53-e001dbe62145")
+		(uuid "a491d1e4-4046-4a24-a86f-e2537c2e4700")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38,7 +38,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ddb9e90b-bc6f-4403-b801-6b56044c635c")
+		(uuid "dddf0a9d-a7a8-46d6-8d19-3bf880185dfd")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -50,7 +50,7 @@
 		(start 9 13)
 		(end 22.5 13)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -60,7 +60,7 @@
 		(start 9 54)
 		(end 9 13)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -70,7 +70,7 @@
 		(start 22.5 13)
 		(end 22.5 54)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -80,7 +80,7 @@
 		(start 22.5 54)
 		(end 9 54)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
