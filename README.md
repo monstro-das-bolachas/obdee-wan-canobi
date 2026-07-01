@@ -1,67 +1,90 @@
-# Teensy 4.1 true dual CAN FD + LIN/K interface
+# OBDee-Wan CANobi
 
-This repository contains hardware work for a Teensy 4.1 based automotive diagnostics and reverse-engineering interface.
-
-## Current status — R10 is NOT FOR FAB
-
-The active revision is **R10 true dual CAN FD + LIN/K**, but it is an **inspection/review revision only**.
-
-**Do not order R10 boards. Do not upload the R10 Gerber ZIP to JLCPCB.**
-
-R10 corrected the major architecture problem by adding true external CAN FD controllers:
-
-```text
-Teensy 4.1 SPI bus
-  -> MCP2518FD CAN FD controller A -> MCP2562FD CAN transceiver A
-  -> MCP2518FD CAN FD controller B -> MCP2562FD CAN transceiver B
-LIN/K interface retained
-OBD pigtail pads and DIP-switch routing retained
-```
-
-However, an external review found that R10 is not fabrication-ready because it lacks an authoritative `.kicad_sch` schematic/ERC and still has power, protection, default-state, layout, decoupling, USB/VIN isolation, and documentation blockers.
-
-Authoritative active folder:
-
-- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/`
-
-Active KiCad PCB-only inspection board:
-
-- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/teensy-41-true-dual-canfd-lin-r10.kicad_pcb`
-- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/kicad/teensy-41-true-dual-canfd-lin-r10.kicad_pro`
-
-Important blocker document:
-
-- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/docs/R10_EXTERNAL_REVIEW_FINDINGS_20260630.md`
-
-## Verification summary
-
-KiCad CLI DRC from the cleaned active revision folder reported:
-
-- DRC violations: 0
-- Unconnected pads/items: 0
-- Footprint errors: 0
-
-This DRC result proves that the existing PCB geometry is internally routable. It does **not** prove the design is safe or fabrication-ready. R10 has no real schematic, no meaningful ERC, and unresolved automotive/power-layout blockers.
-
-## Package warning
-
-The existing R10 ZIPs are retained only for inspection/archive unless superseded by R10A/R11.
-
-Do not use `R10_TRUE_DUAL_CANFD_JLCPCB_GERBERS.zip` for ordering.
-
-## Repository layout
-
-- `README_START_HERE.txt` — short navigation guide.
-- `CURRENT_STATUS.md` — current revision status and safety notes.
-- `revisions/00_ACTIVE_R10_TRUE_DUAL_CANFD/` — active R10 inspection/review material.
-- `revisions/01_R9_CLASSIC_CAN_ARCHIVE/` — previous R9 classic-CAN archive retained for historical/reference purposes.
-- `99_MANIFESTS/` — cleanup and reorganization manifests.
-- `CHANGELOG.md` — revision notes.
-
-## R9 archive note
-
-R9 is retained only as a historical/classic-CAN archive. R9 used MCP2562FD CAN-FD-capable physical transceivers, but did not include external CAN FD controllers. Therefore R9 is not true dual CAN FD.
-
-## Next target
-
-The next orderable target should be **R10A/R11**, with a real schematic/ERC, corrected LIN/CAN default states, corrected buck/power layout, GND pours, local decoupling, ESD protection, USB/VIN isolation, and regenerated manufacturing outputs.
+    An open-source, open-hardware automotive interface for hackers, makers, reverse engineers, and the dangerously curious.
+    
+    OBDee-Wan CANobi is a Teensy 4.1-based vehicle bus tool designed to make CAN FD, classic CAN, LIN, and K-line experimentation more approachable. The goal is simple: build a powerful but understandable interface that everyday tinkerers can assemble, inspect, modify, and learn from.
+    
+    This project is not meant to be a black box. It is meant to be a teaching tool, a hacking platform, and a practical bridge between a laptop and the electrical nervous system of a vehicle.
+    
+##  What it is
+    
+    OBDee-Wan CANobi is an open hardware board for automotive diagnostics and reverse engineering. It is designed around:
+    
+    - Teensy 4.1
+    - Dual external CAN FD controllers
+    - Dual CAN FD transceivers
+    - LIN / K-line interface support
+    - OBD pigtail-friendly wiring
+    - DIP-switch configurable routing
+    - Beginner-visible design decisions
+    - KiCad source files and manufacturing outputs
+    
+##  The project aims to be useful for:
+    
+    - automotive reverse engineering
+    - CAN FD experimentation
+    - LIN and K-line learning
+    - custom diagnostic tools
+    - EV conversion projects
+    - maker/hacker education
+    - bench testing vehicle modules
+    - understanding how vehicle networks actually work
+    
+##  Philosophy
+    
+    Most vehicle bus tools are either expensive, closed, overcomplicated, or hard to modify.
+    
+    OBDee-Wan CANobi tries to be different:
+    
+    - open source
+    - open hardware
+    - understandable
+    - repairable
+    - hackable
+    - affordable
+    - documented for humans, not just engineers
+    
+    This is a tool for the person who wants to know what is happening on the wire, not just click buttons in a vendor app.
+    
+##  Current status
+    
+    R11 is a prototype manufacturing candidate.
+    
+    It is suitable for ordering a small bare-PCB batch for bench bring-up and validation.
+    
+    It is not yet approved for direct vehicle use.
+    
+    Before connecting to a real vehicle, assembled boards must pass:
+    
+    - bare PCB continuity checks
+    - power rail short checks
+    - current-limited bench power-up
+    - OBD/pigtail pin mapping verification
+    - DIP-switch default-state review
+    - CAN/LIN/K-line bench testing
+    - fused vehicle connection procedure
+    
+##  Safety warning
+    
+    Vehicle electrical systems can damage tools, modules, or cars if connected incorrectly.
+    
+    This project is provided for education, experimentation, and bench validation. Use at your own risk. Do not connect untested hardware directly to a vehicle.
+    
+    When in doubt:
+    
+    - use a bench supply
+    - use current limiting
+    - use fuses
+    - verify pinouts with a multimeter
+    - test on spare modules before testing on a car
+    
+##  License
+    
+    This project is open source and open hardware.
+    
+    - Hardware design files: CERN-OHL-P-2.0
+    - Firmware/software: MIT
+    - Documentation: CC-BY-4.0
+    
+    You are free to study, modify, build, remix, and share this project.  
+    Attribution is appreciated and required by the licenses: please credit the original project and author when reusing or publishing derivative work.
